@@ -1,0 +1,157 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage[slovene]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{enumitem}
+
+
+
+\begin{document}
+
+\begin{titlepage}
+    \centering
+    \vfill
+    \vfill
+    \textbf{\large{POROČILO SEMINARSKE NALOGE}}
+    \vfill
+    \textbf{\Huge{STATISTIKA}}
+    \vfill\vfill\vfill\vfill\vfill
+    \textsc{\Large{Sara Bizjak}}
+    \vfill\vfill
+    \textsc{\large{Univerza v Ljubljani}}
+    
+    \textsc{\large{Fakulteta za matematiko in fiziko}}
+    
+    \textsc{\large{Oddelek za matematiko}}
+    \vfill\vfill
+        
+    \large{JULIJ 2020}
+    
+\end{titlepage}
+
+%%%
+
+\newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\noindent
+\textsc{\large{1. NALOGA}}
+\\
+\\
+Podatki so vzeti iz datoteke \texttt{Kibergard}, kjer se nahajajo informacije o 43.886 družinah, ki stanujejo v mestu Kibergard. Za vsako družino so zabeleženi naslednji podatki:
+\begin{itemize}
+    \item Tip družine (od 1 do 3)
+    \item Število članov družine
+    \item Število otrok v družini
+    \item Skupni dohodek družine
+    \item Mestna četrt, v kateri stanuje družina (od 1 do 4)
+    \item Stopnja izobrazbe in vodje gospodinjstva (od 31 do 46: opisi v datoteki z navodili)
+\end{itemize}
+
+\noindent
+Nalogo sem reševala s pomočjo programa R. Koda, uporabljena za generiranje enostavnih slučajnih vzorcev in izračune, je dostopna v priloženi datoteki \textit{naloga1.R}. 
+\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\noindent
+\textsc{Primer a}
+\\
+Vzamemo enostavni slučajni vzorec 200 družin in na njegovi podlagi ocenimo delež družin v Kibergardu, v katerih vodja gospodinjstva nima srednješolske izobrazbe (niti poklicne niti splošne mature).
+Opisan delež znaša $p = 0.195$.
+\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\noindent
+\textsc{Primer b}
+\\
+Ocenimo standardno napako in postavimo 95\% interval zaupanja.
+
+\noindent
+Standardno napako za delež izračunamo po formuli
+$$ \hat{se}(p) = \sqrt{ \frac{p \cdot (1-p)}{n - 1} \cdot \left(1 - \frac{n}{N} \right)}, $$
+kjer so $p = 0.195$, \ $n = 200$, \ $N = 43.886$. 
+\\
+Dobimo rezultat $\hat{se}(p) = 0.02802185$.
+\\
+Interval zaupanja je enak: $[0.1400782, 0.2499218]$.
+\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\noindent
+\textsc{Primer c}
+\\
+Vzorčni delež in ocenjeno standardno napako primerjamo s populacijskim deležem in pravo standardno napako. 
+\\
+\begin{itemize}
+\item Vzorčni delež: $0.195$ 
+\item Populacijski delež: $0.2115025$ 
+\item Razlika obeh deležev: $0.01650253$
+\item Ocenjena standardna napaka (iz vzorca): $0,02802185$
+\item Prava standardna napaka (iz celotne populacije):  $0.02888282$
+\item Razlika med ocenjeno in pravo standardno napako: $0.0008609634$
+\end{itemize}
+Ker velja $0.2115025 \in [0.1400782, 0.2499218]$, interval zaupanja pokrije populacijski delež.
+\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\noindent
+\textsc{Primer d}
+\\
+GRAF 
+\\
+INTERVALI ZAUPANJA + KOLIKO JIH POKRIJE POPULACIJSKI DELEŽ
+\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\noindent
+\textsc{Primer e}
+\\
+Standardni odklon vzorčnih deležev za $100$ prej dobljenih vzorcev je enak $0.02881085$. Prava standardna napaka za vzorec velikosti $200$ pa je $0.02888282$.
+Razlikujeta se za $7.196778 \cdot 10^{-5}$.
+\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\noindent
+\textsc{Primer f}
+\\
+GRAF 
+\\
+INTERVALI ZAUPANJA + KOLIKO JIH POKRIJE POPULACIJSKI DELEŽ
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\noindent
+\textsc{\large{2. NALOGA}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\noindent
+\textsc{\large{3. NALOGA}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\noindent
+\textsc{\large{4. NALOGA}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\noindent
+\textsc{\large{5. NALOGA}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
