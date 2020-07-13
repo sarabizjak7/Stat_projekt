@@ -33,7 +33,7 @@ delez_V
 
 # Ocena standardne napake glede na vzorec iz točke ### A ###
 
-napaka_V <- sqrt(delez_V * (1 - delez_V) /  (n - 1) * (1 - n / N))
+napaka_V <- sqrt((delez_V * (1 - delez_V) /  n) * (1 - (n - 1) / (N - 1)))
 napaka_V
 
 # Interval zaupanja glede na oceno napake -> 95% interval zaupanja -> alpha = 0.05
