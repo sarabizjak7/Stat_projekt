@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.1)  2 JUL 2020 11:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.1)  13 JUL 2020 09:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/sarabizjak/Downloads/04_sem_nal_Sara_Bizjak/porocilo_statistika.tex
-(/Users/sarabizjak/Downloads/04_sem_nal_Sara_Bizjak/porocilo_statistika.tex
+**"/Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.tex"
+(/Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.tex
 LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
@@ -193,7 +193,7 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@toks=\toks28
 \enit@inbox=\box28
 \enitdp@description=\count106
-) (/Users/sarabizjak/Downloads/04_sem_nal_Sara_Bizjak/porocilo_statistika.aux)
+) (/Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.aux)
 \openout1 = `porocilo_statistika.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -365,20 +365,70 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--125
 
  []
 
-[2] (/Users/sarabizjak/Downloads/04_sem_nal_Sara_Bizjak/porocilo_statistika.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--147
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 154--156
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--162
+
+ []
+
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 163--168
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--174
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--180
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--194
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 200--202
+
+ []
+
+[3]
+Overfull \hbox (48.32178pt too wide) detected at line 227
+[]
+ []
+
+
+Overfull \hbox (80.76857pt too wide) detected at line 254
+[]
+ []
+
+[4] [5] (/Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.aux) ) 
 Here is how much of TeX's memory you used:
- 4128 strings out of 492649
- 59421 string characters out of 6129623
- 131651 words of memory out of 5000000
- 7911 multiletter control sequences out of 15000+600000
- 44919 words of font info for 42 fonts, out of 8000000 for 9000
+ 4143 strings out of 492649
+ 59880 string characters out of 6129623
+ 135651 words of memory out of 5000000
+ 7919 multiletter control sequences out of 15000+600000
+ 54898 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,4n,30p,358b,216s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on /Users/sarabizjak/Downloads/04_sem_nal_Sara_Bizjak/porocilo_statistika.pdf (3 pages, 149337 bytes).
+ 55i,12n,30p,395b,216s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on "/Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.pdf" (6 pages, 186209 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 84 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -141,7 +141,43 @@ INTERVALI ZAUPANJA + KOLIKO JIH POKRIJE POPULACIJSKI DELEŽ
 
 \noindent
 \textsc{\large{3. NALOGA}}
+\\
+\\
+Opazimo $n$ neodvisnih realizacij zvezne porazdelitve z gostoto:
+\begin{displaymath}
+    f(x \ | \ \sigma) = \left\{ \begin{array}{ll}
+     \frac{\Gamma(2 \alpha)}{(\Gamma (\alpha))^2} \left[ x(1 - x) \right]^{\alpha - 1} & \textrm{; \ $0 < x < 1$}\\
+     0 & \textrm{; \ sicer,} \\
+    \end{array} \right. 
+\end{displaymath}
+kjer je $\alpha > 0$ neznam parameter. Če je $X$ slučajna spremenljivka s to gostoto, se da izračunati:
+$$ \text{E}(X) = \frac{1}{2}, \ \ \ \ \ \text{var}(X) = \frac{1}{4(2 \alpha + 1)}. $$
+\\
 
+\noindent
+\textsc{Primer a}
+\\
+Določimo obliko porazdelitve v odvisnosti od $\alpha$.
+\\
+
+\noindent
+\textsc{Primer b}
+\\
+Ocenimo $\alpha$ po metodi momentov.
+\\
+
+\noindent
+\textsc{Primer c}
+\\
+Poiščemo enačbo, ki določa cenilko po metodi največjega verjetja. Pogledamo, kdaj ta cenilka obstaja.
+\\
+
+\noindent
+\textsc{Primer d}
+\\
+Poiščemo asimptotično varianco cenilke po metodi največjega verjetja.
+\\
+ 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \noindent
@@ -151,7 +187,71 @@ INTERVALI ZAUPANJA + KOLIKO JIH POKRIJE POPULACIJSKI DELEŽ
 
 \noindent
 \textsc{\large{5. NALOGA}}
+\\
+\\
+$X$ in $Y$ sta slučajni spremenljivki, za kateri velja:
+\begin{itemize} 
+    \item $\text{E}(X) = \mu_x$,
+    \item $\text{E}(Y) = \mu_y$,
+    \item $\text{var}(X) = \sigma_x^2$,
+    \item $\text{var}(Y) = \sigma_y^2$,
+    \item $\text{cov}(X,Y) = \sigma_{x,y}$.
+\end{itemize}
+Opazimo $X$ in želimo napovedati $Y$. 
+\\
 
+\noindent
+\textsc{Primer a}
+\\
+Poiščemo napoved, ki je oblike $\hat{Y} = \alpha + \beta \cdot X$, kjer $\alpha$ in $\beta$ izberemo tako, da je srednja kvadratična napaka $\text{E} \left[ \left( Y - \hat{Y} \right) ^2 \right]$ minimalna.
+\\
+Uporabimo namig 
+\begin{align} 
+    \text{E} \left[ \left( Y - \hat{Y} \right) ^2 \right] = \left[ \text{E}(Y) - \text{E}(\hat{Y}) \right]^2 + \text{var}(Y - \hat{Y}).
+\end{align}
+Ker sta oba člena desne strani enačbe večja od $0$, je dovolj, da poiščemo vrednosti $\alpha$ in $\beta$, ki minimizirata ta dva člena -- potem bo najmanjša možna tudi njuna vsota.
+\\
+Poglejmo si najprej prvi člen enačbe. Vrednost enačbe
+
+\begin{align*}
+    \left[ \text{E}(Y) - \text{E}(\hat{Y}) \right]^2 = \left[ \mu_y - \alpha - \beta \mu_x \right] ^2 
+\end{align*}
+bo najmanjša, ko bo $ \mu_y - \alpha - \beta \cdot \mu_x = 0$. To pa bo res natanko takrat, ko bo $\alpha = \mu_y - \beta \mu_x$. 
+\\
+Poglejmo si še drugi člen enačbe. Vidimo, da je 
+
+\begin{align*} 
+\text{var}(Y-\hat{Y}) &= \text{var}(Y - \alpha - \beta X) = \text{var}(Y - \beta X) = \text{var}(Y) - 2 \beta \text{cov}(X, Y) + \beta^2 \text{var}(X)
+\\
+&= \sigma_y^2 - 2 \beta \sigma_{x,y} + \beta^2 \sigma_x^2 
+\end{align*}
+funkcija spremenljivke $\beta$. Za izračun minimuma enačbo najprej odvajamo po $\beta$ in enačimo z $0$.
+
+\begin{align*}
+    \frac{\partial}{\partial \beta} (\text{var}(Y - \hat{Y})) = - 2 \sigma_{x,y} + 2 \beta \sigma_x^2 = 0 
+\end{align*}
+To bo res, ko bo $ \beta = \frac{\sigma_{x,y}}{\sigma_x^2} $.
+\\
+Vrednosti $\alpha$ in $\beta$, pri katerih bo izraz $\text{E} \left[ \left( Y - \hat{Y}) \right) ^2 \right]$ minimalen, sta
+$$ \alpha = \mu_y - \mu_x \frac{\sigma_{x,y}}{\sigma_x^2} \ \ \ \ \ \text{in} \ \ \ \ \ \beta = \frac{\sigma_{x,y}}{\sigma_x^2} $$
+
+\noindent
+\textsc{Primer b}
+\\
+Pokažemo, da se pri tako izbranih koeficientih \textit{determinacijski koeficient} (kvadrat korelacijskega koeficienta) izraža v obliki
+$$ r_{x,y}^2 = 1 - \frac{\text{var}(Y - \hat{Y})}{\text{var}(Y)}. $$
+\\
+Spomnimo se najprej formule za \textit{korelacijski koeficient}: 
+$$ \text{corr}(X,Y) = \frac{\text{cov}(X,Y)}{\sqrt{\text{var}(X) \text{var}(Y)}} = r_{x,y}. $$
+Ker je determinacijski koeficient enak kvadratu korelacije, je enak
+$$ r_{x,y}^2 = \frac{\text{cov}(X,Y)^2}{\text{var}(X) \text{var}(Y)}. $$
+Dobimo enakost
+$$ 1 - \frac{\text{var}(Y - \hat{Y})}{\text{var}(Y)} = \frac{\text{cov}(X,Y)^2}{\text{var}(X) \text{var}(Y)} $$
+in če upoštevamo še vrednosti $\alpha$ in $\beta$ iz prvega dela naloge:
+\begin{align*} 
+    1 - \frac{\text{var}(Y - \hat{Y})}{\text{var}(Y)} &= \frac{\text{var}(Y) - \text{var}(Y - \hat{Y})}{\text{var}(Y)} = \frac{\sigma_y^2 - \sigma_y^2 + \frac{\sigma_{x,y}^2}{\sigma_x^2}}{\sigma_y^2} 
+    &= \frac{\sigma_{x,y}^2}{\sigma_x^2 \sigma_y^2} = \frac{\text{cov}(X,Y)^2}{\text{var}(X) \text{var}(Y)} = r_{x,y}^2. 
+\end{align*}
+Pokazali smo, da je determinacijski koeficient res enak $1 - \frac{\text{var}(Y - \hat{Y})}{\text{var}(Y)}$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \end{document}

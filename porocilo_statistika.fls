@@ -1,9 +1,9 @@
-PWD /Users/sarabizjak/Downloads/04_sem_nal_Sara_Bizjak
+PWD /Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt
 INPUT /usr/local/texlive/2018/texmf.cnf
 INPUT /usr/local/texlive/2018/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/sarabizjak/Downloads/04_sem_nal_Sara_Bizjak/porocilo_statistika.tex
-OUTPUT /Users/sarabizjak/Downloads/04_sem_nal_Sara_Bizjak/porocilo_statistika.log
+INPUT /Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.tex
+OUTPUT /Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.log
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/base/size12.clo
@@ -52,9 +52,9 @@ INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mhsetup.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/mathtools/mhsetup.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/enumitem/enumitem.sty
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/enumitem/enumitem.sty
-INPUT /Users/sarabizjak/Downloads/04_sem_nal_Sara_Bizjak/porocilo_statistika.aux
-INPUT /Users/sarabizjak/Downloads/04_sem_nal_Sara_Bizjak/porocilo_statistika.aux
-OUTPUT /Users/sarabizjak/Downloads/04_sem_nal_Sara_Bizjak/porocilo_statistika.aux
+INPUT /Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.aux
+INPUT /Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.aux
+OUTPUT /Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.aux
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmr.fd
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmr.fd
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm
@@ -101,7 +101,7 @@ INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmcsc10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmcsc10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmcsc10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmr12.tfm
-OUTPUT /Users/sarabizjak/Downloads/04_sem_nal_Sara_Bizjak/porocilo_statistika.pdf
+OUTPUT /Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.pdf
 INPUT /usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmtt.fd
 INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmtt.fd
@@ -137,17 +137,27 @@ INPUT /usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
-INPUT /Users/sarabizjak/Downloads/04_sem_nal_Sara_Bizjak/porocilo_statistika.aux
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmr8.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/rm-lmr5.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmmi5.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/lmsy5.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/tfm/public/lm/ec-lmr6.tfm
+INPUT /Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.aux
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
-INPUT /usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmex10.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi12.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi6.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi8.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb
+INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr6.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr8.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri12.pfb
 INPUT /usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb
