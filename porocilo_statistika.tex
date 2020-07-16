@@ -99,7 +99,7 @@ Vzorčni delež in ocenjeno standardno napako primerjamo s populacijskim deleže
 \item Razlika obeh deležev: $0.01650253$
 \item Ocenjena standardna napaka (iz vzorca): $0,02802185$
 \item Prava standardna napaka (iz celotne populacije):  $0.02881085$
-\item Razlika med ocenjeno in pravo standardno napako: $0.0008609634$
+\item Razlika med ocenjeno in pravo standardno napako: $0.0008588181$
 \end{itemize}
 Ker velja $0.2115025 \in [0.140215, 0.249785]$, interval zaupanja pokrije populacijski delež.
 \\
@@ -111,7 +111,7 @@ Ker velja $0.2115025 \in [0.140215, 0.249785]$, interval zaupanja pokrije popula
 \\
 GRAF 
 \\
-INTERVALI ZAUPANJA + KOLIKO JIH POKRIJE POPULACIJSKI DELEŽ
+Izmed 100 intervalov zaupanja vzorcev po 200 jih 97 pokrije populacijski delež.
 \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -130,7 +130,7 @@ Razlikujeta se za $7.196778 \cdot 10^{-5}$.
 \\
 GRAF 
 \\
-INTERVALI ZAUPANJA + KOLIKO JIH POKRIJE POPULACIJSKI DELEŽ
+Izmed 100 intervalov zaupanja vzorcev po 800 jih vseh 100 pokrije poulacijski delež.
 \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -236,7 +236,7 @@ $$ n_i = \frac{n}{\sqrt{C_i}} \ \frac{W_i \sigma_i}{\sum_{k = 1}^{K} \frac{W_k \
 \\
 Opazimo $n$ neodvisnih realizacij zvezne porazdelitve z gostoto:
 \begin{displaymath}
-    f(x \ | \ \sigma) = \left\{ \begin{array}{ll}
+    f(x \ | \ \alpha) = \left\{ \begin{array}{ll}
      \frac{\Gamma(2 \alpha)}{(\Gamma (\alpha))^2} \left[ x(1 - x) \right]^{\alpha - 1} & \textrm{; \ $0 < x < 1$}\\
      0 & \textrm{; \ sicer,} \\
     \end{array} \right. 
@@ -248,7 +248,14 @@ $$ \text{E}(X) = \frac{1}{2} \ , \ \ \ \ \ \text{var}(X) = \frac{1}{4(2 \alpha +
 \noindent
 \textsc{\underline{Primer a}}
 \\
-Določimo obliko porazdelitve v odvisnosti od $\alpha$.
+Določimo obliko porazdelitve v odvisnosti od $\alpha$. 
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=90mm]{grafi.png}
+    \caption{Grafi podane funkcije za različne $\alpha$.}
+\end{figure}
+Vidimo, da je funkcija $f(x \ | \ \alpha)$ simetrična glede na $x = \frac{1}{2}$ in ima v tej točki ekstrem ne glede na vrednost $\alpha$. Opazimo tudi, da je funkcija za $\alpha = 1$ kar vodoravna premica. Za $\alpha < 1$ je funkcija konveksna, za $\alpha > 1$ pa konkavna. 
+Z večanjem $\alpha$ postaja funkcija vse bolj strma in \textit{"ožja"}.
 \\
 
 \noindent
@@ -270,7 +277,7 @@ Iz enačbe drugega momenta izrazimo $\alpha$.
     \\
     2 \alpha + 1 &= \frac{1}{\frac{4}{n} \sum_{i = 1}^{n} X_i^2 - 1}
     \\
-    \Rightarrow \alpha &= \frac{1}{2} \left( \frac{1}{\frac{4}{n} \sum_{i = 1}^{n} X_i^2 - 1} - 1 \right).
+    \Rightarrow \hat{\alpha} &= \frac{1}{2} \left( \frac{1}{\frac{4}{n} \sum_{i = 1}^{n} X_i^2 - 1} - 1 \right).
 \end{align*}
 
 \noindent
@@ -302,9 +309,9 @@ kjer (iz predavanj)
     I_1(\hat{\alpha}) &= - \text{E} \left[ \frac{ \partial^2 \ l_1(\alpha \ | \ x_1)}{\partial \alpha^2} \right]
 \end{align}
 V $\frac{\partial l}{\partial \alpha}$ vstavimo $n = 1$ in izračunamo še drugi odvod. Dobimo:
-$$ \frac{\partial^2 l_1}{\partial \alpha^2} = \frac{4 \ \Gamma '' (2 \alpha) \ \Gamma(2 \alpha) - 2 \Gamma' (2 \alpha)^2}{\Gamma (2 \alpha) ^2} - \frac{2 \ \Gamma '' (\alpha) \ \Gamma (\alpha) - 2 \Gamma ' (\alpha) ^ 2}{\Gamma (\alpha)^2}$$
+$$ \frac{\partial^2 l_1}{\partial \alpha^2} = \frac{4 \ \Gamma '' (2 \alpha) \ \Gamma(2 \alpha) - 4 \ \Gamma' (2 \alpha)^2}{\Gamma (2 \alpha) ^2} - \frac{2 \ \Gamma '' (\alpha) \ \Gamma (\alpha) - 2 \Gamma ' (\alpha) ^ 2}{\Gamma (\alpha)^2}$$
 Pričakovana vrednost drugega odvoda je kar enaka drugemu odvodu, ker v njem ne nastopa slučajna spremenljivka $X$ in je torej konstanta. Zato lahko takoj zapišemo varianco, ki je enaka
-$$\text{var}(\hat{\alpha}) = \frac{1}{n} \cdot \frac{1}{ \frac{2 \ \Gamma '' (\alpha) \ \Gamma (\alpha) - 2 \Gamma ' (\alpha) ^ 2}{\Gamma (\alpha)^2} - \frac{4 \ \Gamma '' (2 \alpha) \ \Gamma(2 \alpha) - 2 \Gamma' (2 \alpha)^2}{\Gamma (2 \alpha) ^2} } \ .$$
+$$\text{var}(\hat{\alpha}) = \frac{1}{n} \cdot \frac{1}{ \frac{2 \ \Gamma '' (\alpha) \ \Gamma (\alpha) - 2 \Gamma ' (\alpha) ^ 2}{\Gamma (\alpha)^2} - \frac{4 \ \Gamma '' (2 \alpha) \ \Gamma(2 \alpha) - 4 \ \Gamma' (2 \alpha)^2}{\Gamma (2 \alpha) ^2} } \ .$$
 
 
 

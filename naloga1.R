@@ -6,8 +6,10 @@ library(plotrix)
 
 ### TODO: NARISI INTERVALE ZAUPANJA !!! TU? EXCEL?
 
+setwd("~/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt")
+
 # Uvoz tabele s podatki
-data <- read.table("kibergrad.csv", header = FALSE, sep = ",")
+data <- read.table("kibergrad.csv", header = TRUE, sep = ",")
 
 N <- nrow(data) # stevilo vseh podatkov
 n <- 200 # velikost vzorca 
@@ -87,22 +89,22 @@ for (i in 2:100) {
 }
 
 # Standardne napake za vseh 100 vzorcev
-napaka_200 <- sqrt(delezi_200[1] * (1 - delezi_200[1]) / (n - 1) * (1 - n / N))
-for (i in 2:100){
-  napaka_i <- sqrt(delezi_200[i] * (1 - delezi_200[i]) / (n - 1) * (1 - n/ N))
+napaka_200 <- sqrt((delezi_200[1] * (1 - delezi_200[1]) /  n) * (1 - (n - 1) / (N - 1)))
+for (i in 2:100) {
+  napaka_i <- sqrt((delezi_200[i] * (1 - delezi_200[i]) /  n) * (1 - (n - 1) / (N - 1)))
   napaka_200 <- c(napaka_200, napaka_i)
 }
 
 # Spodnja meja za interval zaupanja
 sp_meja_200 <- delezi_200[1] - koef * napaka_200[1] 
-for (i in 2:100){
+for (i in 2:100) {
   sp_i <- delezi_200[i] - koef * napaka_200[i]
   sp_meja_200 <- c(sp_meja_200, sp_i)
 }
 
 # Zgornja meja za interval zaupanja
 zg_meja_200 <- delezi_200[1] + koef * napaka_200[1] 
-for (i in 2:100){
+for (i in 2:100) {
   zg_i <- delezi_200[i] + koef * napaka_200[i]
   zg_meja_200 <- c(zg_meja_200, zg_i)
 }
@@ -114,14 +116,21 @@ podatki_200 <- cbind(sp_meja_200, zg_meja_200, delezi_200, napaka_200)
 # Koliko intervalov zaupanja pokrije populacijski delez: popul delez mora biti torej vecji od spodnje meje in hkrati manjsi od zgornje.
 
 # TO NE DELA TKO - poprav
-pokritje_200 <- length(podatki_200[,1][podatki_200[,1] < delez_P] && podatki_200[,2][podatki_200[,2] > delez_P]) 
+
+pokritje_200 <- 0
+for (i in 1:100) {
+  if (podatki_200[,1][i] < delez_P && podatki_200[,2][i] > delez_P) {
+    pokritje_200 <- pokritje_200 + 1
+  }
+}
+
 pokritje_200
 
 ################################## E ##################################
 
 # Standardni odklon in napaka za 100 vzorcev po 200 družin
 
-standardni_odklon_100 <- sqrt(delez_P * (1 - delez_P) / n * (1 - (n - 1) / N))
+standardni_odklon_100 <- sqrt(delez_P * (1 - delez_P) / n * (1 - (n - 1) / (N - 1)))
 standardni_odklon_100
 
 napaka_P
@@ -150,9 +159,9 @@ for (i in 2:100){
 }
 
 # Standardne napake za vseh 100 vzorcev
-napaka_800 <- sqrt(delezi_800[1] * (1 - delezi_800[1]) / (n - 1) * (1 - n / N))
+napaka_800 <- sqrt((delezi_800[1] * (1 - delezi_800[1]) /  n) * (1 - (n - 1) / (N - 1)))
 for (i in 2:100){
-  napaka_i <- sqrt(delezi_800[i] * (1 - delezi_800[i]) / (n - 1) * (1 - n/ N))
+  napaka_i <- sqrt((delezi_800[i] * (1 - delezi_800[i]) /  n) * (1 - (n - 1) / (N - 1)))
   napaka_800 <- c(napaka_800, napaka_i)
 }
 
