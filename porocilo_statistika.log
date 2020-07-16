@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.1)  13 JUL 2020 20:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.1)  16 JUL 2020 10:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -366,59 +366,89 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--125
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 142--147
+Underfull \hbox (badness 10000) in paragraph at lines 137--143
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 154--156
-
+Overfull \hbox (28.5086pt too wide) in paragraph at lines 137--143
+\T1/lmr/m/n/12 Naredimo raz-i-skavo na po-pu-la-ciji, ki ima $\OML/lmm/m/it/12 K$ \T1/lmr/m/n/12 stra-tu-mov z ve-li-kostmi $\OML/lmm/m/it/12 N[]; N[]; [] ; N[]$\T1/lmr/m/n/12 .
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 157--162
+Underfull \hbox (badness 10000) in paragraph at lines 137--143
 
  []
 
 [2]
-Underfull \hbox (badness 10000) in paragraph at lines 185--190
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 191--196
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 204--210
+Underfull \hbox (badness 10000) in paragraph at lines 172--175
 
  []
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 216--218
+Underfull \hbox (badness 10000) in paragraph at lines 199--201
+
+ []
+
+[4]
+Underfull \hbox (badness 10000) in paragraph at lines 227--229
 
  []
 
 
-Overfull \hbox (48.32178pt too wide) detected at line 243
+Underfull \hbox (badness 10000) in paragraph at lines 232--237
+
+ []
+
+[5]
+Underfull \hbox (badness 10000) in paragraph at lines 244--246
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--252
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--280
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 281--286
+
+ []
+
+[6]
+Underfull \hbox (badness 10000) in paragraph at lines 294--300
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 306--308
+
+ []
+
+
+Overfull \hbox (48.32178pt too wide) detected at line 333
 []
  []
 
-[4] [5] (/Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.aux) ) 
+[7] [8] (/Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.aux) ) 
 Here is how much of TeX's memory you used:
- 4143 strings out of 492649
- 59880 string characters out of 6129623
- 134651 words of memory out of 5000000
- 7919 multiletter control sequences out of 15000+600000
+ 4149 strings out of 492649
+ 59938 string characters out of 6129623
+ 134699 words of memory out of 5000000
+ 7925 multiletter control sequences out of 15000+600000
  54898 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,12n,30p,395b,216s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on "/Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.pdf" (6 pages, 190877 bytes).
+ 55i,12n,30p,468b,216s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
+Output written on "/Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.pdf" (9 pages, 203977 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
- 62 compressed objects within 1 object stream
+ 95 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

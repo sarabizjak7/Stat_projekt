@@ -7,7 +7,7 @@ library(plotrix)
 ### TODO: NARISI INTERVALE ZAUPANJA !!! TU? EXCEL?
 
 # Uvoz tabele s podatki
-data <- read.table("kibergrad.csv", header = TRUE, sep = ",")
+data <- read.table("kibergrad.csv", header = FALSE, sep = ",")
 
 N <- nrow(data) # stevilo vseh podatkov
 n <- 200 # velikost vzorca 
@@ -58,7 +58,7 @@ izobrazba_P <- data$IZOBRAZBA
 delez_P <- length(izobrazba_P[izobrazba_P <= 38]) / N
 delez_P
 
-napaka_P <- sqrt(delez_P * (1 - delez_P) / (n - 1) * (1 - n / N))
+napaka_P <- sqrt((delez_P * (1 - delez_P) / n) * (1 - (n - 1) / (N - 1)))
 napaka_P
 
 # Razlika med P in V

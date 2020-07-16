@@ -136,6 +136,96 @@ INTERVALI ZAUPANJA + KOLIKO JIH POKRIJE POPULACIJSKI DELEŽ
 
 \noindent
 \textsc{\large{2. NALOGA}}
+\\
+\\
+Naredimo raziskavo na populaciji, ki ima $K$ stratumov z velikostmi $N_1, N_2, \ldots, N_K$. Denimo, da lahko izberemo vzorec velikosti $n$.
+\\
+
+\noindent
+\textsc{Primer a}
+\\
+Denimo, da so stroški raziskave enaki $C = C_0 + n C_1$, kjer je $n$ število enot v vzorcu ($C_0$ je začetni stršek, $C_1$ pa je nadaljnji strošek na enoto). Pri danih sredstvih za raziskavo v višini $C$ poiščemo velikosti podvzorcev $n_1, n_2, \ldots, n_K$, pri katerih je varianca standardne cenilke populacijskega povprečja minimalna.
+\\
+Označimo z $\overline{X}$ populacijsko povprečje.
+\\
+Če imamo stratume velikosti $N_1, N_2, \ldots, N_K$, se moramo odločiti, kako velike vzorce bomo izbrali iz posameznih stratumov. Izbiramo tako, da bo standardna napaka cenilke $\overline{X}$ čim manjša. 
+Poiščemo torej take $n_1, n_2, \ldots, n_K$, kjer $n = n_1 + n_2 + \ldots + n_K$, da bo $$ \text{var}(\overline{X}) = \sum_{i = k}^{K} W_i ^ 2 \left( \frac{ \sigma_k^2}{n_k} \right) \left( \frac{N_k - n_k}{N_k - 1} \right) $$
+čim manjša.
+Ker so v večini praktičnih situacij korekturni faktorji $\frac{N_k - n_k}{N_k - 1} \approx 1$, jih lahko zanemarimo. Rešujemo torej problem vezanega ekstrema:
+$$ f(n_1, n_2, \ldots, n_K) = \sum_{k = 1}^{K} \frac{\sigma_k^2}{n_k} W_k^2 $$
+$$ \text{z vezjo} \  C = C_0 + nC_1.$$
+Sestavimo Lagrangeovo funkcijo:
+$$ F(n_1, n_2, \ldots, n_K, \lambda) = f(n_1, n_2, \ldots, n_K) + \lambda (C_0 + \sum_{k = 1}^{K} n_k C_1 - C). $$
+Zapišemo parcialne odvode funkcije $F$ in jih enačimo z $0$.
+$$ \frac{ \partial F}{\partial n_i} = - \frac{ \sigma_i^2}{n_i^2} \  W_i^2 + \lambda \ C_1 = 0 \ \ \ \text{za} \ i = 1, 2, \ldots, K. $$
+Izrazimo $n_i$ in dobimo sistem enačb
+\begin{align}\label{en:nk}
+n_i = \frac{W_k \sigma_i}{ \sqrt{ \lambda \ C_1}}
+\end{align}
+Da določimo $\lambda$, naredimo vsoto enačbe (\ref{en:nk}) po $k$, $k = 1, 2, \ldots, K.$
+$$ n = \frac{1}{\sqrt{\lambda \ C_1}} \sum_{k = 1}^{K} W_k \sigma_k $$
+\begin{align}\label{en:lambda}
+\Rightarrow \sqrt{\lambda} = \frac{\sum_{k = 1}^{K} W_k \sigma_k}{n \sqrt{C_1}}
+\end{align}
+Če združimo (\ref{en:nk}) in (\ref{en:lambda}), dobimo:
+
+$$ n_i = n \ \frac{W_i \sigma_i}{\sum_{k = 1}^{K} W_k \sigma_k}. $$
+Rezultat je enak, kot če bi iskali minimalno varianco brez danega začetnega pogoja -- ni pomembno, kakšne $n_1, n_2, \ldots, n_K$ izberemo. Stroški raziskave $C$ bodo vedno enaki, ker je cena $C_1$ vedno enaka.
+\\
+
+\noindent
+\textsc{Primer b}
+\\
+Sedaj se lahko stroški opažanja spreminjajo od stratuma do strauma. Če je $n_k$ število enot iz $k-$tega stratuma, ki so zajete v vzorec, naj bodo stroški raziskave enaki:
+$$ C = C_0 + \sum_{k = 1}^{K}n_k C_k. $$
+Pri danih sredstvih za raziskavo v višini $C$ poiščemo tiste velikosti podvzorcev, pri katerih je varianca cenilke populacijskega povprečja minimalna.
+\\
+Rešujemo podoben primer kot prej, le da sedaj nimamo več fiksne $C_1$, ampak se spreminja z vsakim stratumom. 
+Z enakim razmislekom kot prej sestavimo Lagrangeovo funkcijo:
+$$ F(n_1, n_2, \ldots, n_K, \lambda) = f(n_1, n_2, \ldots, n_K) + \lambda (C_0 + \sum_{k = 1}^{K} n_k C_k - C). $$
+Zapišemo parcialne odvode funkcije $F$ in jih enačimo z $0$.
+$$ \frac{ \partial F}{\partial n_i} = - \frac{ \sigma_i^2}{n_i^2} \  W_i^2 + \lambda \ C_i = 0 \ \ \ \text{za} \ i = 1, 2, \ldots, K.  $$
+Izrazimo $n_i$ in dobimo sistem enačb
+\begin{align}\label{en:nkb}
+n_i = \frac{W_i \sigma_i}{ \sqrt{ \lambda \ C_i}}
+\end{align}
+Da določimo $\lambda$, naredimo vsoto enačbe (\ref{en:nkb}) po $k$, $k = 1, 2, \ldots, K.$
+$$ n = \frac{1}{\sqrt{\lambda}} \sum_{k = 1}^{K} \frac{W_k \sigma_k}{\sqrt{C_k}} $$
+\begin{align}\label{en:lambdab}
+\Rightarrow \sqrt{\lambda} = \frac{1}{n} \sum_{k = 1}^{K} \frac{W_k \sigma_k}{\sqrt{C_k}}
+\end{align}
+Če združimo (\ref{en:nkb}) in (\ref{en:lambdab}), dobimo:
+
+$$ n_i = \frac{n}{\sqrt{C_i}} \ \frac{W_i \sigma_i}{\sum_{k = 1}^{K} \frac{W_k \sigma_k}{\sqrt{C_k}}}. $$
+\\
+
+\noindent
+\textsc{Primer c}
+\\
+Naj se stroški raziskave izražajo na enak način kot v prejšnji točki, predpisano pa imamo natančnost raziskave, torej varianco cenilke. Poiščemo tiste vrednosti podvzorcev, pri katerih bodo stroški najmanjši.
+\\
+Želimo torej minimizirati stroške pri pogoju, da je varianca minimalna, tj. $ \text{var}()\overline{X}) = \sum_{k = 1}^{K} \frac{W_k^2 \sigma_k^2}{n_k}. $
+\\
+Rešujemo torej vezani ekstrem za funkcijo:
+$$ f (n_1, n_2, \ldots, n_K) = C_0 + \sum_{k = 1}^{K} n_k C_k $$
+$$ \text{z vezjo} \ \sum_{k = 1}^{K} \frac{W_k^2 \sigma_k^2}{n_k} - \text{var}(\overline{X}). $$
+Sestavimo Lagrangeovo funkcijo:
+$$ F (n_1, n_2, \ldots, n_K, \lambda) = C_0 + \sum_{k = 1}^{K} n_k C_k  + \lambda \left( \sum_{k = 1}^{K} \frac{W_k^2 \sigma_k^2}{n_k} - \text{var}(\overline{X}) \right)$$
+Zapišemo parcialne odvode funkcije $F$ in jih enačimo z $0$.
+$$ \frac{ \partial F}{\partial n_i} = C_i - \lambda \ \frac{W_i^2 \sigma_i^2}{n_i^2} = 0 \ \ \ \text{za} \ i = 1, 2, \ldots, K.  $$
+Izrazimo $n_i$ in dobimo sistem enačb
+\begin{align}\label{en:nkc}
+n_i = \sqrt{\frac{\lambda}{C_i}} \ W_i \sigma_i
+\end{align}
+Da določimo $\lambda$, naredimo vsoto enačbe (\ref{en:nkc}) po $k$, $k = 1, 2, \ldots, K.$
+$$ n = \sqrt{\lambda} \ \sum_{k = 1}^{K} \frac{W_k \sigma_k}{\sqrt{C_k}} $$
+\begin{align}\label{en:lambdac}
+\Rightarrow \sqrt{\lambda} = \frac{n}{\sum_{k = 1}^{K} \frac{W_k \sigma_k}{\sqrt{C_k}}}
+\end{align}
+Če združimo (\ref{en:nkc}) in (\ref{en:lambdac}), dobimo:
+
+$$ n_i = \frac{n}{\sqrt{C_i}} \ \frac{W_i \sigma_i}{\sum_{k = 1}^{K} \frac{W_k \sigma_k}{\sqrt{C_k}}}. $$
+\\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
