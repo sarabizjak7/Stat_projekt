@@ -279,7 +279,18 @@ Iz enačbe drugega momenta izrazimo $\alpha$.
 \textsc{Primer c}
 \\
 Poiščemo enačbo, ki določa cenilko po metodi največjega verjetja. Pogledamo, kdaj ta cenilka obstaja.
-
+$$ L_1 (\alpha \ | \ x_1) = \frac{\Gamma (2 \alpha)}{\Gamma (\alpha)^2} \ x_1^{\alpha - 1} (1 - x_1)^{\alpha - 1} $$
+$$ l_1 (\alpha \ | \ x_1) = \text{ln}(\text{L}_1 (\alpha | x_1)) $$
+$$ \Rightarrow l_1 (\alpha \ | \ x_1) = \text{ln}(\Gamma (2 \alpha)) - 2 \text{ln} (\Gamma (\alpha)) + (\alpha - 1) \text{ln}(x_1) + (\alpha - 1) \text{ln}(x_1 - 1) $$
+\\
+$$ l (\alpha \ | \ x) = \sum_{i = 1}^{n} \text{l}_1 (\alpha | x_1) $$
+$$ \Rightarrow l (\alpha \ | \ x) = n \cdot \text{ln}(\Gamma (2 \alpha)) - 2 n \cdot \text{ln}(\Gamma (\alpha)) + (\alpha - 1) \sum_{i = 1}^{n} \text{ln}(x_i) + (\alpha - 1) \sum_{i = 1}^{n} \text{ln} (x_i - 1)$$
+\\
+Funkcijo $ l (\alpha \ | \ x) $ odvajamo po $\alpha$.
+$$ \frac{\partial l}{\partial \alpha} = n \cdot \frac{1}{\Gamma (2 \alpha)} \cdot 2 \Gamma' (2 \alpha) - 2n \cdot \frac{1}{\Gamma (\alpha)} \cdot \Gamma' (\alpha) + \sum_{i = 1}^{n} \text{ln}(x_i) + \sum_{i = 1}^{n} \text{ln}(x_i - 1)$$
+Cenilka bo obstaja natanko tedaj, ko bo imela enačba
+ $$ \frac{1}{\Gamma (2 \alpha)} \cdot 2 \Gamma' (2 \alpha) - 2 \cdot \frac{1}{\Gamma (\alpha)} \cdot \Gamma' (\alpha) = \frac{1}{n} \ \sum_{i = 1}^{n} \text{ln} \left( \frac{1}{x_i(x_i - 1)} \right) $$
+rešitev
 
 \noindent
 \textsc{Primer d}
