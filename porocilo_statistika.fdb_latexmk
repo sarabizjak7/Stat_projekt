@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1594894379 "/Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.tex" "/Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.pdf" "porocilo_statistika" 1594894379
-  "/Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.aux" 1594894379 216 efc0f7d3672b1934b7b098fdde7fce9d ""
-  "/Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.tex" 1594894378 16095 e3499dc0369ac108c650957122980b85 ""
+["pdflatex"] 1594908449 "/Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.tex" "/Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.pdf" "porocilo_statistika" 1594908450
+  "/Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.aux" 1594908449 243 2a444dedd9bbfa40d20e51c929ddf1f0 ""
+  "/Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.tex" 1594908448 17406 b8a5aade992ed708dfe910c47bce186e ""
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1480098668 2375 baa924870cfb487815765f9094cf3728 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc" 1480098668 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1480098668 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -47,6 +47,7 @@
   "/usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr8.pfb" 1480098742 122174 a7a08406857c9530a0320a2517f60370 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri12.pfb" 1480098742 109265 32320cb6133d4d76bf83e27b5eb4009b ""
   "/usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb" 1480098742 27863 09ce3735688ffde955e72da27c95b61a ""
+  "/usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy6.pfb" 1480098742 28109 6d61305ed3d0eb794ebe36f15cf44aa0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy8.pfb" 1480098742 27802 5c876bb2c4040caaf035d60bd74a86bd ""
   "/usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt12.pfb" 1480098742 110323 92daea7ca7b4120bd2b54b047c93be27 ""
   "/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1480098806 71627 94eb9990bed73c364d7f53f960cc8c5b ""
@@ -104,11 +105,11 @@
   "/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1523934492 2717033 f61a5287d9c22a39a74f1979fe3f905c ""
   "/usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1535794464 4220279 fee64cedfdff37fe7b862d99b4d68f56 ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
-  "porocilo_statistika.aux" 1594894379 216 efc0f7d3672b1934b7b098fdde7fce9d ""
-  "porocilo_statistika.tex" 1594894378 16095 e3499dc0369ac108c650957122980b85 ""
+  "porocilo_statistika.aux" 1594908449 243 2a444dedd9bbfa40d20e51c929ddf1f0 ""
+  "porocilo_statistika.tex" 1594908448 17406 b8a5aade992ed708dfe910c47bce186e ""
   (generated)
   "/Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.log"
+  "porocilo_statistika.log"
   "porocilo_statistika.pdf"
   "/Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.pdf"
-  "porocilo_statistika.log"
   "porocilo_statistika.aux"

@@ -57,13 +57,13 @@ Podatki so vzeti iz datoteke \texttt{Kibergard}, kjer se nahajajo informacije o 
 \end{itemize}
 
 \noindent
-Nalogo sem reševala s pomočjo programa R. Koda, uporabljena za generiranje enostavnih slučajnih vzorcev in izračune, je dostopna v priloženi datoteki \textit{naloga1.R}. 
+Nalogo sem reševala s pomočjo programa R. Koda, uporabljena za generiranje enostavnih slučajnih vzorcev in izračune, je priložena na koncu poročila pod naslovom \textit{Dodatek A}, dostopna pa je tudi v priloženi datoteki \textit{naloga1.R}. 
 \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \noindent
-\textsc{Primer a}
+\textsc{\underline{Primer a}}
 \\
 Vzamemo enostavni slučajni vzorec 200 družin in na njegovi podlagi ocenimo delež družin v Kibergardu, v katerih vodja gospodinjstva nima srednješolske izobrazbe (niti poklicne niti splošne mature).
 Opisan delež znaša $p = 0.195$.
@@ -72,7 +72,7 @@ Opisan delež znaša $p = 0.195$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \noindent
-\textsc{Primer b}
+\textsc{\underline{Primer b}}
 \\
 Ocenimo standardno napako in postavimo 95\% interval zaupanja.
 
@@ -89,7 +89,7 @@ Interval zaupanja je enak: $[0.140215, 0.249785]$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \noindent
-\textsc{Primer c}
+\textsc{\underline{Primer c}}
 \\
 Vzorčni delež in ocenjeno standardno napako primerjamo s populacijskim deležem in pravo standardno napako. 
 \\
@@ -107,7 +107,7 @@ Ker velja $0.2115025 \in [0.140215, 0.249785]$, interval zaupanja pokrije popula
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \noindent
-\textsc{Primer d}
+\textsc{\underline{Primer d}}
 \\
 GRAF 
 \\
@@ -117,7 +117,7 @@ INTERVALI ZAUPANJA + KOLIKO JIH POKRIJE POPULACIJSKI DELEŽ
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \noindent
-\textsc{Primer e}
+\textsc{\underline{Primer e}}
 \\
 Standardni odklon vzorčnih deležev za $100$ prej dobljenih vzorcev je enak $0.02881085$. Prava standardna napaka za vzorec velikosti $200$ pa je $0.02888282$.
 Razlikujeta se za $7.196778 \cdot 10^{-5}$.
@@ -126,7 +126,7 @@ Razlikujeta se za $7.196778 \cdot 10^{-5}$.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \noindent
-\textsc{Primer f}
+\textsc{\underline{Primer f}}
 \\
 GRAF 
 \\
@@ -145,11 +145,9 @@ Naredimo raziskavo na populaciji, ki ima $K$ stratumov z velikostmi $N_1, N_2, \
 \\
 
 \noindent
-\textsc{Primer a}
+\textsc{\underline{Primer a}}
 \\
 Denimo, da so stroški raziskave enaki $C = C_0 + n C_1$, kjer je $n$ število enot v vzorcu ($C_0$ je začetni stršek, $C_1$ pa je nadaljnji strošek na enoto). Pri danih sredstvih za raziskavo v višini $C$ poiščemo velikosti podvzorcev $n_1, n_2, \ldots, n_K$, pri katerih je varianca standardne cenilke populacijskega povprečja minimalna.
-\\
-Označimo z $\overline{X}$ populacijsko povprečje.
 \\
 Če imamo stratume velikosti $N_1, N_2, \ldots, N_K$, se moramo odločiti, kako velike vzorce bomo izbrali iz posameznih stratumov. Izbiramo tako, da bo standardna napaka cenilke $\overline{X}$ čim manjša. 
 Poiščemo torej take $n_1, n_2, \ldots, n_K$, kjer $n = n_1 + n_2 + \ldots + n_K$, da bo $$ \text{var}(\overline{X}) = \sum_{k = 1}^{K} W_k ^ 2 \left( \frac{ \sigma_k^2}{n_k} \right) \left( \frac{N_k - n_k}{N_k - 1} \right) $$
@@ -165,7 +163,7 @@ Izrazimo $n_i$ in dobimo sistem enačb
 \begin{align}\label{en:nk}
 n_i = \frac{W_i \sigma_i}{ \sqrt{ \lambda \ C_1}}
 \end{align}
-Da določimo $\lambda$, naredimo vsoto enačbe (\ref{en:nk}) po $k$, $k = 1, 2, \ldots, K.$
+Da določimo $\lambda$, naredimo vsoto enačbe (\ref{en:nk}) po $i$, $i = 1, 2, \ldots, K.$
 $$ n = \frac{1}{\sqrt{\lambda \ C_1}} \sum_{k = 1}^{K} W_k \sigma_k $$
 \begin{align}\label{en:lambda}
 \Rightarrow \sqrt{\lambda} = \frac{\sum_{k = 1}^{K} W_k \sigma_k}{n \sqrt{C_1}}
@@ -177,7 +175,7 @@ Rezultat je enak, kot če bi iskali minimalno varianco brez danega začetnega po
 \\
 
 \noindent
-\textsc{Primer b}
+\textsc{\underline{Primer b}}
 \\
 Sedaj se lahko stroški opažanja spreminjajo od stratuma do strauma. Če je $n_k$ število enot iz $k-$tega stratuma, ki so zajete v vzorec, naj bodo stroški raziskave enaki:
 $$ C = C_0 + \sum_{k = 1}^{K}n_k C_k. $$
@@ -192,7 +190,7 @@ Izrazimo $n_i$ in dobimo sistem enačb
 \begin{align}\label{en:nkb}
 n_i = \frac{W_i \sigma_i}{ \sqrt{ \lambda \ C_i}}
 \end{align}
-Da določimo $\lambda$, naredimo vsoto enačbe (\ref{en:nkb}) po $k$, $k = 1, 2, \ldots, K.$
+Da določimo $\lambda$, naredimo vsoto enačbe (\ref{en:nkb}) po $i$, $i = 1, 2, \ldots, K.$
 $$ n = \frac{1}{\sqrt{\lambda}} \sum_{k = 1}^{K} \frac{W_k \sigma_k}{\sqrt{C_k}} $$
 \begin{align}\label{en:lambdab}
 \Rightarrow \sqrt{\lambda} = \frac{1}{n} \sum_{k = 1}^{K} \frac{W_k \sigma_k}{\sqrt{C_k}}
@@ -203,24 +201,24 @@ $$ n_i = \frac{n}{\sqrt{C_i}} \ \frac{W_i \sigma_i}{\sum_{k = 1}^{K} \frac{W_k \
 \\
 
 \noindent
-\textsc{Primer c}
+\textsc{\underline{Primer c}}
 \\
 Naj se stroški raziskave izražajo na enak način kot v prejšnji točki, predpisano pa imamo natančnost raziskave, torej varianco cenilke. Poiščemo tiste vrednosti podvzorcev, pri katerih bodo stroški najmanjši.
 \\
-Želimo torej minimizirati stroške pri pogoju, da je varianca minimalna, tj. $ \text{var}()\overline{X}) = \sum_{k = 1}^{K} \frac{W_k^2 \sigma_k^2}{n_k}. $
+Želimo torej minimizirati stroške pri pogoju $ \text{var}(\overline{X}) = \sum_{k = 1}^{K} \frac{W_k^2 \sigma_k^2}{n_k}.$ Označimo $\text{var}(\overline{X}) = V,$ kjer je $V$ predpisana vrednost.
 \\
 Rešujemo torej vezani ekstrem za funkcijo:
 $$ f (n_1, n_2, \ldots, n_K) = C_0 + \sum_{k = 1}^{K} n_k C_k $$
-$$ \text{z vezjo} \ \sum_{k = 1}^{K} \frac{W_k^2 \sigma_k^2}{n_k} - \text{var}(\overline{X}). $$
+$$ \text{z vezjo} \ \sum_{k = 1}^{K} \frac{W_k^2 \sigma_k^2}{n_k} - V. $$
 Sestavimo Lagrangeovo funkcijo:
-$$ F (n_1, n_2, \ldots, n_K, \lambda) = C_0 + \sum_{k = 1}^{K} n_k C_k  + \lambda \left( \sum_{k = 1}^{K} \frac{W_k^2 \sigma_k^2}{n_k} - \text{var}(\overline{X}) \right)$$
+$$ F (n_1, n_2, \ldots, n_K, \lambda) = C_0 + \sum_{k = 1}^{K} n_k C_k  + \lambda \left( \sum_{k = 1}^{K} \frac{W_k^2 \sigma_k^2}{n_k} - V \right)$$
 Zapišemo parcialne odvode funkcije $F$ in jih enačimo z $0$.
 $$ \frac{ \partial F}{\partial n_i} = C_i - \lambda \ \frac{W_i^2 \sigma_i^2}{n_i^2} = 0 \ \ \ \text{za} \ i = 1, 2, \ldots, K.  $$
 Izrazimo $n_i$ in dobimo sistem enačb
 \begin{align}\label{en:nkc}
 n_i = \sqrt{\frac{\lambda}{C_i}} \ W_i \sigma_i
 \end{align}
-Da določimo $\lambda$, naredimo vsoto enačbe (\ref{en:nkc}) po $k$, $k = 1, 2, \ldots, K.$
+Da določimo $\lambda$, naredimo vsoto enačbe (\ref{en:nkc}) po $i$, $i = 1, 2, \ldots, K.$
 $$ n = \sqrt{\lambda} \ \sum_{k = 1}^{K} \frac{W_k \sigma_k}{\sqrt{C_k}} $$
 \begin{align}\label{en:lambdac}
 \Rightarrow \sqrt{\lambda} = \frac{n}{\sum_{k = 1}^{K} \frac{W_k \sigma_k}{\sqrt{C_k}}}
@@ -248,18 +246,18 @@ $$ \text{E}(X) = \frac{1}{2} \ , \ \ \ \ \ \text{var}(X) = \frac{1}{4(2 \alpha +
 \\
 
 \noindent
-\textsc{Primer a}
+\textsc{\underline{Primer a}}
 \\
 Določimo obliko porazdelitve v odvisnosti od $\alpha$.
 \\
 
 \noindent
-\textsc{Primer b}
+\textsc{\underline{Primer b}}
 \\
 Ocenimo $\alpha$ po metodi momentov.
 \\
 Iz podane pričakovane vrednosti in variance lahko izračunamo vrednosti prvega in drugega momenta.
-$$ \text{E}(X) = \frac{1}{n} \sum_{i = 1}^{n} X_i = \frac{1}{3}, $$
+$$ \text{E}(X) = \frac{1}{n} \sum_{i = 1}^{n} X_i = \frac{1}{2}, $$
 $$ \text{E}(X^2) = \frac{1}{n} \sum_{i = 1}^{n} X_i^2 = \text{var}(X) + \text{E}(X)^2 = \frac{1}{4(2 \alpha + 1)} + \frac{1}{4}. $$
 
 Iz enačbe drugega momenta izrazimo $\alpha$.
@@ -276,7 +274,7 @@ Iz enačbe drugega momenta izrazimo $\alpha$.
 \end{align*}
 
 \noindent
-\textsc{Primer c}
+\textsc{\underline{Primer c}}
 \\
 Poiščemo enačbo, ki določa cenilko po metodi največjega verjetja. Pogledamo, kdaj ta cenilka obstaja.
 $$ L_1 (\alpha \ | \ x_1) = \frac{\Gamma (2 \alpha)}{\Gamma (\alpha)^2} \ x_1^{\alpha - 1} (1 - x_1)^{\alpha - 1} $$
@@ -289,15 +287,27 @@ $$ \Rightarrow l (\alpha \ | \ x) = n \cdot \text{ln}(\Gamma (2 \alpha)) - 2 n \
 Funkcijo $ l (\alpha \ | \ x) $ odvajamo po $\alpha$.
 $$ \frac{\partial l}{\partial \alpha} = n \cdot \frac{1}{\Gamma (2 \alpha)} \cdot 2 \Gamma' (2 \alpha) - 2n \cdot \frac{1}{\Gamma (\alpha)} \cdot \Gamma' (\alpha) + \sum_{i = 1}^{n} \text{ln}(x_i) + \sum_{i = 1}^{n} \text{ln}(x_i - 1)$$
 Cenilka bo obstaja natanko tedaj, ko bo imela enačba
- $$ \frac{1}{\Gamma (2 \alpha)} \cdot 2 \Gamma' (2 \alpha) - 2 \cdot \frac{1}{\Gamma (\alpha)} \cdot \Gamma' (\alpha) = \frac{1}{n} \ \sum_{i = 1}^{n} \text{ln} \left( \frac{1}{x_i(x_i - 1)} \right) $$
-rešitev
+ $$ \frac{1}{\Gamma (2 \alpha)} \cdot \Gamma' (2 \alpha) - \frac{1}{\Gamma (\alpha)} \cdot \Gamma' (\alpha) = \frac{1}{2n} \ \sum_{i = 1}^{n} \text{ln} \left( \frac{1}{x_i(x_i - 1)} \right) $$
+rešitev.
 
 \noindent
-\textsc{Primer d}
+\textsc{\underline{Primer d}}
 \\
 Poiščemo asimptotično varianco cenilke po metodi največjega verjetja.
 \\
- 
+Za asimptotično varianco bomo potrebovali Fischerjevo informacijo za cenilko, saj velja 
+$$\text{var}(\hat{\alpha}) \approx \frac{1}{n \cdot I_1(\hat{\alpha})}, $$
+kjer (iz predavanj) 
+\begin{align}\label{en:fish}
+    I_1(\hat{\alpha}) &= - \text{E} \left[ \frac{ \partial^2 \ l_1(\alpha \ | \ x_1)}{\partial \alpha^2} \right]
+\end{align}
+V $\frac{\partial l}{\partial \alpha}$ vstavimo $n = 1$ in izračunamo še drugi odvod. Dobimo:
+$$ \frac{\partial^2 l_1}{\partial \alpha^2} = \frac{4 \ \Gamma '' (2 \alpha) \ \Gamma(2 \alpha) - 2 \Gamma' (2 \alpha)^2}{\Gamma (2 \alpha) ^2} - \frac{2 \ \Gamma '' (\alpha) \ \Gamma (\alpha) - 2 \Gamma ' (\alpha) ^ 2}{\Gamma (\alpha)^2}$$
+Pričakovana vrednost drugega odvoda je kar enaka drugemu odvodu, ker v njem ne nastopa slučajna spremenljivka $X$ in je torej konstanta. Zato lahko takoj zapišemo varianco, ki je enaka
+$$\text{var}(\hat{\alpha}) = \frac{1}{n} \cdot \frac{1}{ \frac{2 \ \Gamma '' (\alpha) \ \Gamma (\alpha) - 2 \Gamma ' (\alpha) ^ 2}{\Gamma (\alpha)^2} - \frac{4 \ \Gamma '' (2 \alpha) \ \Gamma(2 \alpha) - 2 \Gamma' (2 \alpha)^2}{\Gamma (2 \alpha) ^2} } \ .$$
+
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \noindent
@@ -321,7 +331,7 @@ Opazimo $X$ in želimo napovedati $Y$.
 \\
 
 \noindent
-\textsc{Primer a}
+\textsc{\underline{Primer a}}
 \\
 Poiščemo napoved, ki je oblike $\hat{Y} = \alpha + \beta \cdot X$, kjer $\alpha$ in $\beta$ izberemo tako, da je srednja kvadratična napaka $\text{E} \left[ \left( Y - \hat{Y} \right) ^2 \right]$ minimalna.
 \\
@@ -356,7 +366,7 @@ Vrednosti $\alpha$ in $\beta$, pri katerih bo izraz $\text{E} \left[ \left( Y - 
 $$ \alpha = \mu_y - \mu_x \frac{\sigma_{x,y}}{\sigma_x^2} \ \ \ \ \ \text{in} \ \ \ \ \ \beta = \frac{\sigma_{x,y}}{\sigma_x^2} $$
 
 \noindent
-\textsc{Primer b}
+\textsc{\underline{Primer b}}
 \\
 Pokažemo, da se pri tako izbranih koeficientih \textit{determinacijski koeficient} (kvadrat korelacijskega koeficienta) izraža v obliki
 $$ r_{x,y}^2 = 1 - \frac{\text{var}(Y - \hat{Y})}{\text{var}(Y)}. $$
