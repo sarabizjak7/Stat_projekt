@@ -141,7 +141,7 @@ standardni_odklon_200 <- 0
 for (i in 1:100) {
   standardni_odklon_200 <- standardni_odklon_200 + (napaka_200[i] ^2 - povpr^2)
 }
-standardni_odklon_200 <- standardni_odklon_200 / 100
+standardni_odklon_200 <- sqrt(standardni_odklon_200 / 100)
 
 standardni_odklon_200
 napaka_P
@@ -214,7 +214,7 @@ standardni_odklon_800 <- 0
 for (i in 1:100) {
   standardni_odklon_800 <- standardni_odklon_800 + (napaka_800[i] ^2 - povpr1^2)
 }
-standardni_odklon_800 <- standardni_odklon_800 / 100
+standardni_odklon_800 <- sqrt(standardni_odklon_800 / 100)
 
 standardni_odklon_800
 

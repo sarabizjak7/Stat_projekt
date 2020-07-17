@@ -109,7 +109,11 @@ Ker velja $0.2115025 \in [0.140215, 0.249785]$, interval zaupanja pokrije popula
 \noindent
 \textsc{\underline{Primer d}}
 \\
-GRAF 
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=120mm]{CI_200.png}
+    \caption{Intervali zaupanja za 100 slučajnih vzorcev velikosti 200.}
+\end{figure}
 \\
 Izmed 100 intervalov zaupanja vzorcev po 200 jih 97 pokrije populacijski delež.
 \\
@@ -128,7 +132,11 @@ Razlikujeta se za $7.196778 \cdot 10^{-5}$.
 \noindent
 \textsc{\underline{Primer f}}
 \\
-GRAF 
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=120mm]{CI_800.png}
+    \caption{Intervali zaupanja za 100 slučajnih vzorcev velikosti 800.}
+\end{figure}
 \\
 Izmed 100 intervalov zaupanja vzorcev po 800 jih vseh 100 pokrije poulacijski delež.
 \\
@@ -149,7 +157,7 @@ Naredimo raziskavo na populaciji, ki ima $K$ stratumov z velikostmi $N_1, N_2, \
 \\
 Denimo, da so stroški raziskave enaki $C = C_0 + n C_1$, kjer je $n$ število enot v vzorcu ($C_0$ je začetni stršek, $C_1$ pa je nadaljnji strošek na enoto). Pri danih sredstvih za raziskavo v višini $C$ poiščemo velikosti podvzorcev $n_1, n_2, \ldots, n_K$, pri katerih je varianca standardne cenilke populacijskega povprečja minimalna.
 \\
-Če imamo stratume velikosti $N_1, N_2, \ldots, N_K$, se moramo odločiti, kako velike vzorce bomo izbrali iz posameznih stratumov. Izbiramo tako, da bo standardna napaka cenilke $\overline{X}$ čim manjša. 
+Če imamo stratume velikosti $N_1, N_2, \ldots, N_K$, se moramo odločiti, kako velike vzorce bomo izbrali iz posameznih stratumov. Izbiramo tako, da bo varianca cenilke $\overline{X}$ čim manjša. 
 Poiščemo torej take $n_1, n_2, \ldots, n_K$, kjer $n = n_1 + n_2 + \ldots + n_K$, da bo $$ \text{var}(\overline{X}) = \sum_{k = 1}^{K} W_k ^ 2 \left( \frac{ \sigma_k^2}{n_k} \right) \left( \frac{N_k - n_k}{N_k - 1} \right) $$
 čim manjša.
 Ker so v večini praktičnih situacij korekturni faktorji $\frac{N_k - n_k}{N_k - 1} \approx 1$, jih lahko zanemarimo. Rešujemo torej problem vezanega ekstrema:
@@ -452,9 +460,9 @@ Spomnimo se najprej formule za \textit{korelacijski koeficient}:
 $$ \text{corr}(X,Y) = \frac{\text{cov}(X,Y)}{\sqrt{\text{var}(X) \text{var}(Y)}} = r_{x,y}. $$
 Ker je determinacijski koeficient enak kvadratu korelacije, je enak
 $$ r_{x,y}^2 = \frac{\text{cov}(X,Y)^2}{\text{var}(X) \text{var}(Y)}. $$
-Dobimo enakost
-$$ 1 - \frac{\text{var}(Y - \hat{Y})}{\text{var}(Y)} = \frac{\text{cov}(X,Y)^2}{\text{var}(X) \text{var}(Y)} $$
-in če upoštevamo še vrednosti $\alpha$ in $\beta$ iz prvega dela naloge:
+Želimo torej pokazati
+$$ 1 - \frac{\text{var}(Y - \hat{Y})}{\text{var}(Y)} = \frac{\text{cov}(X,Y)^2}{\text{var}(X) \text{var}(Y)}. $$
+Če upoštevamo vrednosti $\alpha$ in $\beta$ iz prvega dela naloge, lahko zapišemo
 \begin{align*} 
     1 - \frac{\text{var}(Y - \hat{Y})}{\text{var}(Y)} &= \frac{\text{var}(Y) - \text{var}(Y - \hat{Y})}{\text{var}(Y)} = \frac{\sigma_y^2 - \sigma_y^2 + \frac{\sigma_{x,y}^2}{\sigma_x^2}}{\sigma_y^2} 
     \\
