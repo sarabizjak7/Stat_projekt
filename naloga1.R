@@ -135,12 +135,18 @@ for (i in 2:100) {
 
 # Standardni odklon in napaka za 100 vzorcev po 200 družin
 
-standardni_odklon_100 <- sqrt(delez_P * (1 - delez_P) / n * (1 - (n - 1) / (N - 1)))
-standardni_odklon_100
+povpr <- mean(napaka_200)
 
+standardni_odklon_200 <- 0
+for (i in 1:100) {
+  standardni_odklon_200 <- standardni_odklon_200 + (napaka_200[i] ^2 - povpr^2)
+}
+standardni_odklon_200 <- standardni_odklon_200 / 100
+
+standardni_odklon_200
 napaka_P
 
-abs(standardni_odklon_100 - napaka_P)
+abs(standardni_odklon_200 - napaka_P)
 
 ################################## F ##################################
 
@@ -202,12 +208,20 @@ pokritje_800
 
 # Standardni odklon in standardna napaka za 100 vzorcev po 800 družin
 
-st_odklon_m = sqrt(delez_P * (1 - delez_P) / m * (1 - (m - 1) / N))
-st_odklon_m
+povpr1 <- mean(napaka_800)
 
-napaka_m <- sqrt(delez_P * (1 - delez_P) / (m - 1) * (1 - m / N))
+standardni_odklon_800 <- 0
+for (i in 1:100) {
+  standardni_odklon_800 <- standardni_odklon_800 + (napaka_800[i] ^2 - povpr1^2)
+}
+standardni_odklon_800 <- standardni_odklon_800 / 100
+
+standardni_odklon_800
+
+
+napaka_m <- sqrt((delez_P * (1 - delez_P) / m) * (1 - (m - 1) / (N - 1)))
 napaka_m
 
-abs(st_odklon_m - napaka_m)
+abs(standardni_odklon_800 - napaka_m)
 
 ####################################################################
