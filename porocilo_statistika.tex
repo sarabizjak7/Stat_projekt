@@ -10,7 +10,7 @@
 \usepackage{amsfonts}
 \usepackage{mathtools}
 \usepackage{enumitem}
-
+\usepackage[table,xcdraw]{xcolor}
 
 
 \begin{document}
@@ -316,12 +316,82 @@ $$\text{var}(\hat{\alpha}) = \frac{1}{n} \cdot \frac{1}{ \frac{2 \ \Gamma '' (\a
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\newpage
 \noindent
 \textsc{\large{4. NALOGA}}
+V tabeli imamo podatke Ameriškega nacionalnega centra za statistiko zdravja o številu samomorov v ZDA v letu $1970$ po mesecih.
 
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=80mm]{samomori.png}
+    \caption{Podatki o samomorih}
+\end{figure}
+
+\noindent
+\textsc{\underline{Primer a}}
+\\
+Narišemo histogram, pri katerem so širine stolpcev sorazmerne dolžinam mesecev. 
+\\
+\noindent
+\textsc{\underline{Primer b}}
+\\
+V knjigi \textit{John A. Rice: Mathematical Statistics and Data Analysis} (stran $343$, $344$) preberemo o Pearsonovem $\chi^2$ testu, ki ga bomo uporabili v našem primeru.
+\\
+Označimo z $1$ mesec januar, z $2$ febaruar in po vrsti naprej do $12$ za december. 
+\\
+Preveriti želimo predpostavko, da je samomorilnost skozi celo leto konstanta, kar pomeni, da je konstantna za vseh 12 mesecev (razmerje samomorov v posameznem mesecu je torej $\frac{1}{12}$). Naš test bo v tem primeru enak:
+$$ H_0 : p_1 = p_2 = \ldots = p_{12} = \frac{1}{12} $$
+$$ H_1 : \text{vsaj ena izmed} \  p_1, \ldots, p_{12} \ \text{ni enaka} \ \frac{1}{12} $$
+Uporabili bomo Parsonovo $\chi^2$ statistiko:
+\begin{align}\label{en:hi}
+    \chi^2 = \sum_{i = 1}^{12} \frac{(O_i - E_i)^2}{E_i} \xrightarrow{n \rightarrow \infty} \chi_{m - k - 1}^2, 
+\end{align}
+kjer je $m = 12$, k število ocenjenih parametrov, kar je v napem primeru $0$. Imamo torej $11$ prostostnih stopenj. $O_i$ je opazovan rezultat, torej podatek, koliko samomorov se v mesecu zgodi.
+\\
+Iz spodnje tabele (slika iz \textit{John A. Rice: Mathematical Statistics and Data Analysis}) vidimo, da je točka, ki določa zgornjih $5\%$ $\chi^2$ testa z 11 prostostnimi stopnjami enaka $26.76$. To pomeni, da test ovržemo, če $\chi^2 > 26.76$. 
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=130mm]{hi.png}
+    \caption{Hi kvadrat porazdelitev glede na prostostne stopnje.}
+\end{figure}
+
+\noindent
+Izračunajmo $\chi^2$.
+Seštejmo vse samomore v letu in seštevek označimo z $N$. Velja $ N = 1867 + 1789 + \ldots + 1859 = 23480$. Po ničelni hipotezi velja, da je $p_i = \frac{1}{12}, \ \forall i = 1, 2, \ldots, 12$. Velja torej 
+$$\text{E}_i =  N \cdot p_i = 1956.67, \ \forall i = 1, 2, \ldots, 12.$$
+Za lažji pregled zapišimo podatke za rabo izračuna (\ref{en:hi}) v tabelo:
+\\
+\begin{table}[h!]
+    \begin{center}
+        \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+            \hline
+            \rowcolor[HTML]{FFFFFF} 
+            {\color[HTML]{333333} \textbf{$i$}}                                                 & \textbf{1}                   & \textbf{2}                   & \textbf{3}                   & \textbf{4}                   & \textbf{5}                   & \textbf{6}                   & \textbf{7}                   & \textbf{8}                   & \textbf{9}                   & \textbf{10}                  & \textbf{11}                  & \textbf{12} \\ \hline
+            \cellcolor[HTML]{FFFFFF}{\color[HTML]{333333} \textbf{$O_i$}}                       & \cellcolor[HTML]{FFFFFF}1867 & \cellcolor[HTML]{FFFFFF}1789 & \cellcolor[HTML]{FFFFFF}1944 & \cellcolor[HTML]{FFFFFF}2094 & \cellcolor[HTML]{FFFFFF}2097 & \cellcolor[HTML]{FFFFFF}1981 & \cellcolor[HTML]{FFFFFF}1887 & \cellcolor[HTML]{FFFFFF}2024 & \cellcolor[HTML]{FFFFFF}1928 & \cellcolor[HTML]{FFFFFF}2032 & \cellcolor[HTML]{FFFFFF}1978 & 1859        \\ \hline
+            \cellcolor[HTML]{FFFFFF}{\color[HTML]{333333} \textbf{$\frac{(O_i - E_i)^2}{E_i}$}} & 4.11                         & 14.37                        & 0.08                         & 9.64                         & 10.06                        & 0.30                         & 2.48                         & 2.32                         & 0.42                         & 2.90                         & 0.23                         & 4.88        \\ \hline
+        \end{tabular}
+    \end{center}
+\end{table}
+
+\noindent
+Vrednost $\chi^2$ statistike je vsota števil v zadnji vrstici tabele. Velja torej
+$$ \chi^2 = 4.11 + 14.37 + \ldots + 4.88 = 51.79 $$
+Iz zgornjih sklepov sledi, da $H_0$ zavržemo, saj je $51.79 > 26.76$. Zavrnili smo torej hipotezo, da je razmerje samomorov v posameznih mesecih konstantno.
+\\
+\\
+Če še malo analiziramo podatke v tabeli, vidimo, da k testni statistiki največ prispevajo meseci februar, april in maj, saj imajo glede na druge mesece zelo visoko vrednost. Pri teh treh mesecih se pričakovano število samomorov in dejansko število samomorov za največ razlikujeta.
+\\
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=100mm]{razp.png}
+    \caption{Absolutne razlike med pričakovanim in dejanskim številom samomorv za posamezni mesec}
+\end{figure}
+
+\noindent
+Iz grafa ne vidimo nobenega vzorca, ki bi nam lahko kaj povedal o številu samomorov glede na posamezni mesec.
+\\
+\\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \noindent
 \textsc{\large{5. NALOGA}}
 \\

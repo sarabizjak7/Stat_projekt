@@ -3,6 +3,7 @@ library(plyr)
 library(Rmisc)
 library(gplots)
 library(plotrix)
+library(ggplot2)
 
 ### TODO: NARISI INTERVALE ZAUPANJA !!! TU? EXCEL?
 
@@ -110,12 +111,10 @@ for (i in 2:100) {
 }
 
 # Zdruzimo podatke v tabelo
-podatki_200 <- cbind(sp_meja_200, zg_meja_200, delezi_200, napaka_200)
+podatki_200 <- cbind(sp_meja_200, zg_meja_200)
 
 
 # Koliko intervalov zaupanja pokrije populacijski delez: popul delez mora biti torej vecji od spodnje meje in hkrati manjsi od zgornje.
-
-# TO NE DELA TKO - poprav
 
 pokritje_200 <- 0
 for (i in 1:100) {
@@ -125,6 +124,12 @@ for (i in 1:100) {
 }
 
 pokritje_200
+
+x <- c(1)
+for (i in 2:100) {
+  x <- c(x, i)
+}
+
 
 ################################## E ##################################
 
@@ -180,12 +185,17 @@ for (i in 2:100){
 }
 
 # Zdruzimo podatke v tabelo
-podatki_800 <- cbind(sp_meja_800, zg_meja_800, delezi_800, napaka_800)
+podatki_800 <- cbind(sp_meja_800, zg_meja_800)
 
 # Koliko intervalov zaupanja pokrije populacijski delez: popul delez mora biti torej vecji od spodnje meje in hkrati manjsi od zgornje.
 
-# TO NE DELA TKO - poprav
-pokritje_800 <- length(podatki_800[,1][podatki_800[,1] < delez_P] && podatki_800[,2][podatki_800[,2] > delez_P]) 
+pokritje_800 <- 0
+for (i in 1:100) {
+  if (podatki_800[,1][i] < delez_P && podatki_800[,2][i] > delez_P) {
+    pokritje_800 <- pokritje_800 + 1
+  }
+}
+
 pokritje_800
 
 ###
