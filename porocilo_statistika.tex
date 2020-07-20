@@ -148,8 +148,8 @@ Razlikujeta se za $0.01349875$.
 \\
 \\
 V primeru, ko smo vzeli $100$ vzorcev velikosti $800$, smo dobili boljše rezultate kot pri izbiri $100$ vzorcev velikosti $200$. 
-Praviloma lahko z izbiro večjega vzorca dobimo boljše napovedi, vendar moramo pri tem paziti še na dober vzorčni načrt. Vzorčni načrt je v naprej predpisan postopek izbiranja vzorca iz vnaprej določene in natančno opredeljene populacija. 
-Način vzorčenja bistveno vpliva na zanesljivost ocen. Če je izbira enot iz populacije naključna, potem takemu vzorčenju pravimo verjetnostno vzorčenje. Z vpeljavo naključnosti se najboljse izognemo pristranskosti.
+Praviloma lahko z izbiro večjega vzorca dobimo boljše napovedi, vendar moramo pri tem paziti še na dober vzorčni načrt. Vzorčni načrt je v naprej predpisan postopek izbiranja vzorca iz vnaprej določene in natančno opredeljene populacije. 
+Način vzorčenja bistveno vpliva na zanesljivost ocen. Če je izbira enot iz populacije naključna, potem takemu vzorčenju pravimo verjetnostno vzorčenje. Z vpeljavo naključnosti se najbolje izognemo pristranskosti.
 Primer slabega vzorčnega načrta in posledično napačnih napovedi je napoved izida volitev v ZDA leta 1936. 
 \\
 
@@ -308,7 +308,7 @@ $$ L_1 (\alpha \ | \ x_1) = \frac{\Gamma (2 \alpha)}{\Gamma (\alpha)^2} \ x_1^{\
 $$ l_1 (\alpha \ | \ x_1) = \text{ln}(\text{L}_1 (\alpha | x_1)) $$
 $$ \Rightarrow l_1 (\alpha \ | \ x_1) = \text{ln}(\Gamma (2 \alpha)) - 2 \text{ln} (\Gamma (\alpha)) + (\alpha - 1) \text{ln}(x_1) + (\alpha - 1) \text{ln}(x_1 - 1) $$
 \\
-$$ l (\alpha \ | \ x) = \sum_{i = 1}^{n} \text{l}_1 (\alpha | x_1) $$
+$$ l (\alpha \ | \ x) = \sum_{i = 1}^{n} \text{l}_i (\alpha | x_i) $$
 $$ \Rightarrow l (\alpha \ | \ x) = n \cdot \text{ln}(\Gamma (2 \alpha)) - 2 n \cdot \text{ln}(\Gamma (\alpha)) + (\alpha - 1) \sum_{i = 1}^{n} \text{ln}(x_i) + (\alpha - 1) \sum_{i = 1}^{n} \text{ln} (x_i - 1)$$
 \\
 Funkcijo $ l (\alpha \ | \ x) $ odvajamo po $\alpha$.
