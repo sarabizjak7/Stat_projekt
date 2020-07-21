@@ -1,3 +1,5 @@
+#######################################################################################
+
 library(lattice)
 library(plyr)
 library(Rmisc)
@@ -5,7 +7,7 @@ library(gplots)
 library(plotrix)
 library(ggplot2)
 
-### TODO: NARISI INTERVALE ZAUPANJA !!! TU? EXCEL?
+#######################################################################################
 
 setwd("~/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt")
 
@@ -17,7 +19,7 @@ n <- 200 # velikost vzorca
 
 # Oznaka _V se nanasa na vzorec, oznaka _P pa na populacijo 
 
-################################## A ##################################
+########################################## A ##########################################
 
 # Enostavni slucajni vzorec 200 ljudi
 index <- sample(1:nrow(data), n)
@@ -32,7 +34,7 @@ izobrazba_V <- vzorec$IZOBRAZBA
 delez_V <- length(izobrazba_V[izobrazba_V <= 38]) / n
 delez_V
 
-################################## B ##################################
+########################################## B ##########################################
 
 # Ocena standardne napake glede na vzorec iz točke ### A ###
 
@@ -49,7 +51,7 @@ zg_meja <- delez_V + koef * napaka_V
 sp_meja
 zg_meja
 
-################################## C ##################################
+########################################## C ##########################################
 
 # Vzorcni delez iz ### A ### in ocenjeno standardno napako iz ### B ### 
 # primerjamo s populacijskim deležem in pravo standardno napako
@@ -69,19 +71,19 @@ napaka_P
 abs(delez_P - delez_V)
 abs(napaka_P - napaka_V)
 
-################################## D ##################################
+########################################## D ##########################################
 
 # Poleg enost sl vzorca iz ### A ###, vzamemo se 99 sl vzorcev po 200 ljudi.
 # Ponovimo iste izracune kot zgoraj, le da za vseh 100 oz. 99 vzorcev:
   # Delez
   # Standardna napaka
   # Interval zaupanja kot spodnjo in zgornjo mejo
+
 ###
 
 # Delez vodij gospodinjstva v vzorcu, ki nimajo srednjesolske izobrazbe za vseh 100 vzorcev 
 delezi_200 <- delez_V
 for (i in 2:100) {
-  # pripravimo i-ti vzorec
   index_i <- sample(1:nrow(data), n)
   vzorec_i <- data[index_i,]
   izobrazba_i <- vzorec_i$IZOBRAZBA
@@ -110,11 +112,14 @@ for (i in 2:100) {
   zg_meja_200 <- c(zg_meja_200, zg_i)
 }
 
+###
+
 # Zdruzimo podatke v tabelo
 podatki_200 <- cbind(sp_meja_200, zg_meja_200)
 
 
-# Koliko intervalov zaupanja pokrije populacijski delez: popul delez mora biti torej vecji od spodnje meje in hkrati manjsi od zgornje.
+# Koliko intervalov zaupanja pokrije populacijski delez: 
+# popul delez mora biti torej vecji od spodnje meje in hkrati manjsi od zgornje.
 
 pokritje_200 <- 0
 for (i in 1:100) {
@@ -125,21 +130,15 @@ for (i in 1:100) {
 
 pokritje_200
 
-x <- c(1)
-for (i in 2:100) {
-  x <- c(x, i)
-}
-
-
-################################## E ##################################
+########################################## E ##########################################
 
 # Standardni odklon in napaka za 100 vzorcev po 200 družin
 
-povpr <- mean(napaka_200)
+povpr <- mean(delezi_200)
 
 standardni_odklon_200 <- 0
 for (i in 1:100) {
-  standardni_odklon_200 <- standardni_odklon_200 + (napaka_200[i] ^2 - povpr^2)
+  standardni_odklon_200 <- standardni_odklon_200 + (delezi_200[i]  - povpr)^2
 }
 standardni_odklon_200 <- sqrt(standardni_odklon_200 / 100)
 
@@ -148,9 +147,15 @@ napaka_P
 
 abs(standardni_odklon_200 - napaka_P)
 
-################################## F ##################################
+########################################## F ##########################################
 
 # 100 enostavnih slucajnih vzorcev po 800 ljudi
+# Naredimo izračune:
+  # Delez
+  # Standardna napaka
+  # Interval zaupanja kot spodnjo in zgornjo mejo
+
+###
 
 m <- 800 # velikost vzorca 
 
@@ -190,10 +195,13 @@ for (i in 2:100){
   zg_meja_800 <- c(zg_meja_800, zg_i)
 }
 
+###
+
 # Zdruzimo podatke v tabelo
 podatki_800 <- cbind(sp_meja_800, zg_meja_800)
 
-# Koliko intervalov zaupanja pokrije populacijski delez: popul delez mora biti torej vecji od spodnje meje in hkrati manjsi od zgornje.
+# Koliko intervalov zaupanja pokrije populacijski delez: 
+# popul delez mora biti torej vecji od spodnje meje in hkrati manjsi od zgornje.
 
 pokritje_800 <- 0
 for (i in 1:100) {
@@ -205,14 +213,15 @@ for (i in 1:100) {
 pokritje_800
 
 ###
+###
 
 # Standardni odklon in standardna napaka za 100 vzorcev po 800 družin
 
-povpr1 <- mean(napaka_800)
+povpr1 <- mean(delezi_800)
 
 standardni_odklon_800 <- 0
 for (i in 1:100) {
-  standardni_odklon_800 <- standardni_odklon_800 + (napaka_800[i] ^2 - povpr1^2)
+  standardni_odklon_800 <- standardni_odklon_800 + (delezi_800[i] - povpr1)^2
 }
 standardni_odklon_800 <- sqrt(standardni_odklon_800 / 100)
 
@@ -224,4 +233,4 @@ napaka_m
 
 abs(standardni_odklon_800 - napaka_m)
 
-####################################################################
+#######################################################################################

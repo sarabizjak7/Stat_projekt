@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.1)  20 JUL 2020 08:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.1)  21 JUL 2020 08:24
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -393,7 +393,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--123
 
 [2 </Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/CI_200.png>]
 Overfull \hbox (5.11285pt too wide) in paragraph at lines 124--130
-\OT1/lmr/m/n/12 0\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 00140308$\T1/lmr/m/n/12 . Prava stan-dar-dna na-paka za vzo-rec ve-li-ko-sti $\OT1/lmr/m/n/12 200$ \T1/lmr/m/n/12 pa je $\OT1/lmr/m/n/12 0\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 02881085$\T1/lmr/m/n/12 .
+\OT1/lmr/m/n/12 0\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 02955486$\T1/lmr/m/n/12 . Prava stan-dar-dna na-paka za vzo-rec ve-li-ko-sti $\OT1/lmr/m/n/12 200$ \T1/lmr/m/n/12 pa je $\OT1/lmr/m/n/12 0\OML/lmm/m/it/12 :\OT1/lmr/m/n/12 02881085$\T1/lmr/m/n/12 .
  []
 
 
@@ -417,122 +417,145 @@ Underfull \hbox (badness 10000) in paragraph at lines 143--155
  []
 
 [3 </Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/CI_800.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 158--166
+Underfull \hbox (badness 10000) in paragraph at lines 158--168
 
  []
 
 
-Overfull \hbox (28.5086pt too wide) in paragraph at lines 158--166
-\T1/lmr/m/n/12 Naredimo raz-i-skavo na po-pu-la-ciji, ki ima $\OML/lmm/m/it/12 K$ \T1/lmr/m/n/12 stra-tu-mov z ve-li-kostmi $\OML/lmm/m/it/12 N[]; N[]; [] ; N[]$\T1/lmr/m/n/12 .
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 158--166
+Underfull \hbox (badness 10000) in paragraph at lines 158--168
 
  []
 
 [4]
-Underfull \hbox (badness 10000) in paragraph at lines 193--196
+Underfull \hbox (badness 10000) in paragraph at lines 195--198
 
  []
 
 [5]
-Underfull \hbox (badness 10000) in paragraph at lines 220--222
+Underfull \hbox (badness 10000) in paragraph at lines 222--224
 
  []
 
 [6]
-Underfull \hbox (badness 10000) in paragraph at lines 248--250
+Underfull \hbox (badness 10000) in paragraph at lines 250--252
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--258
+Underfull \hbox (badness 10000) in paragraph at lines 255--260
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--267
+Underfull \hbox (badness 10000) in paragraph at lines 267--269
 
  []
 
 <grafi.png, id=44, 781.41937pt x 662.97687pt>
 File: grafi.png Graphic file (type png)
 <use grafi.png>
-Package pdftex.def Info: grafi.png  used on input line 274.
-(pdftex.def)             Requested size: 256.0748pt x 217.2555pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 268--280
+Package pdftex.def Info: grafi.png  used on input line 280.
+(pdftex.def)             Requested size: 312.9803pt x 265.54012pt.
+[7] [8 </Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/grafi.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 313--315
 
  []
 
-[7] [8 </Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/grafi.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 309--311
+
+Underfull \hbox (badness 10000) in paragraph at lines 323--330
 
  []
 
 [9] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 352--357
+
+ []
+
 <samomori.png, id=59, 359.3425pt x 362.85562pt>
 File: samomori.png Graphic file (type png)
 <use samomori.png>
-Package pdftex.def Info: samomori.png  used on input line 346.
-(pdftex.def)             Requested size: 227.62204pt x 229.85155pt.
- [11 </Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/samomori.png>]
-<hi.png, id=64, 632.3625pt x 531.9875pt>
+Package pdftex.def Info: samomori.png  used on input line 360.
+(pdftex.def)             Requested size: 170.71652pt x 172.39143pt.
+<hist.png, id=60, 1052.43187pt x 768.37062pt>
+File: hist.png Graphic file (type png)
+<use hist.png>
+Package pdftex.def Info: hist.png  used on input line 372.
+(pdftex.def)             Requested size: 256.0748pt x 186.9569pt.
+[11 </Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/samomori.png> </Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/hist.png>]
+<hi.png, id=66, 632.3625pt x 531.9875pt>
 File: hi.png Graphic file (type png)
 <use hi.png>
-Package pdftex.def Info: hi.png  used on input line 374.
+Package pdftex.def Info: hi.png  used on input line 395.
 (pdftex.def)             Requested size: 369.88582pt x 311.17491pt.
 
-Overfull \hbox (98.94235pt too wide) in paragraph at lines 386--393
+Overfull \hbox (98.94235pt too wide) in paragraph at lines 407--414
  [] 
  []
 
-[12 </Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/hi.png>]
-<razp.png, id=70, 619.81563pt x 485.815pt>
+<razp.png, id=67, 619.81563pt x 485.815pt>
 File: razp.png Graphic file (type png)
 <use razp.png>
-Package pdftex.def Info: razp.png  used on input line 406.
+Package pdftex.def Info: razp.png  used on input line 427.
 (pdftex.def)             Requested size: 284.52756pt x 223.01059pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 398--409
+Underfull \hbox (badness 10000) in paragraph at lines 419--430
+
+ []
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 431--438
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 410--421
+Underfull \hbox (badness 10000) in paragraph at lines 431--438
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 410--421
-
- []
-
-[13 </Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/razp.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 427--429
+Underfull \hbox (badness 10000) in paragraph at lines 431--438
 
  []
 
 
-Overfull \hbox (48.32178pt too wide) detected at line 454
+Underfull \hbox (badness 10000) in paragraph at lines 431--438
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 431--438
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 440--446
+
+ []
+
+[13 </Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/hi.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 452--454
+
+ []
+
+[14 </Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/razp.png>]
+Overfull \hbox (48.32178pt too wide) detected at line 479
 []
  []
 
-[14] [15] (/Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.aux) ) 
+[15] [16] (/Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.aux) ) 
 Here is how much of TeX's memory you used:
- 4760 strings out of 492649
- 67022 string characters out of 6129623
- 146816 words of memory out of 5000000
- 8516 multiletter control sequences out of 15000+600000
+ 4766 strings out of 492649
+ 67089 string characters out of 6129623
+ 149824 words of memory out of 5000000
+ 8521 multiletter control sequences out of 15000+600000
  54898 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,18n,35p,589b,287s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}</usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-Output written on "/Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.pdf" (16 pages, 673082 bytes).
+Output written on "/Users/sarabizjak/Documents/FMF MAT dodiplomski/FMF 3. letnik/Statistika/Stat_projekt/porocilo_statistika.pdf" (17 pages, 739392 bytes).
 PDF statistics:
- 134 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
+ 139 PDF objects out of 1000 (max. 8388607)
+ 91 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

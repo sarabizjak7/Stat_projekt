@@ -57,7 +57,7 @@ Podatki so vzeti iz datoteke \texttt{Kibergard}, kjer se nahajajo informacije o 
 \end{itemize}
 
 \noindent
-Nalogo sem reševala s pomočjo programa R. Koda, uporabljena za generiranje enostavnih slučajnih vzorcev in izračune, je priložena na koncu poročila pod naslovom \textit{Dodatek A}, dostopna pa je tudi v priloženi datoteki \textit{naloga1.R}. 
+Nalogo so rešene s pomočjo programa R. Koda, uporabljena za generiranje enostavnih slučajnih vzorcev in izračune, je dostopna v priloženi datoteki \textit{naloga1.R}. 
 \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -109,7 +109,7 @@ Ker velja $0.2115025 \in [0.140215, 0.249785]$, interval zaupanja pokrije popula
 \noindent
 \textsc{\underline{Primer d}}
 \\
-Poleg vzorca iz točke a) vzamemo še $99$ enostavnih slučajnih vzorcev po 200 družin in prav tako za vsakega določimo $95 \%$ interval zaupanja. Intervale zaupanja prikažemo na grafu in ugotovimo, koliko jih pokrije populacijski delež.
+Poleg vzorca iz točk a) vzamemo še $99$ enostavnih slučajnih vzorcev po 200 družin in prav tako za vsakega določimo $95 \%$ interval zaupanja. Intervale zaupanja prikažemo na grafu in ugotovimo, koliko jih pokrije populacijski delež.
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=120mm]{CI_200.png}
@@ -124,8 +124,8 @@ Izmed 100 intervalov zaupanja jih 97 pokrije populacijski delež. To vidimo tudi
 \noindent
 \textsc{\underline{Primer e}}
 \\
-Standardni odklon vzorčnih deležev za $100$ prej dobljenih vzorcev je enak $0.00140308$. Prava standardna napaka za vzorec velikosti $200$ pa je $0.02881085$.
-Razlikujeta se za $0.02740777$.
+Standardni odklon vzorčnih deležev za $100$ prej dobljenih vzorcev je enak $0.02955486$. Prava standardna napaka za vzorec velikosti $200$ pa je $0.02881085$.
+Razlikujeta se za $0.0007440172$.
 \\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -143,8 +143,8 @@ Vzamemo 100 slučajnih vzorcev po 800 družin. Za vsakega določimo $95 \%$ inte
 \noindent
 Izmed 100 intervalov zaupanja vzorcev po 800 jih vseh 100 pokrije poulacijski delež. To vidimo tudi na grafu, kjer rdeča črta označuje populacijski delež.
 \\
-Standardni odklon vzorčnih deležev za $100$ dobljenih vzorcev velikosti $800$ je enak $0.0008074025$. Prava standardna napaka za vzorec velikosti $800$ pa je $0.01430616$.
-Razlikujeta se za $0.01349875$.
+Standardni odklon vzorčnih deležev za $100$ dobljenih vzorcev velikosti $800$ je enak $0.01458635$. Prava standardna napaka za vzorec velikosti $800$ pa je $0.01430616$.
+Razlikujeta se za $0.0002801971$.
 \\
 \\
 V primeru, ko smo vzeli $100$ vzorcev velikosti $800$, smo dobili boljše rezultate kot pri izbiri $100$ vzorcev velikosti $200$. 
@@ -161,13 +161,15 @@ Primer slabega vzorčnega načrta in posledično napačnih napovedi je napoved i
 \\
 Sklepi in izpeljave, ki jih bom uporabila pri vseh podnalogah, sledijo dokazu izreka v knjigi \textit{John A. Rice: Mathematical Statistics and Data Analysis} (stran $232$, $233$).
 \\
-Naredimo raziskavo na populaciji, ki ima $K$ stratumov z velikostmi $N_1, N_2, \ldots, N_K$. Denimo, da lahko izberemo vzorec velikosti $n$.
+Naredimo raziskavo na populaciji, ki ima $K$ stratumov z velikostmi 
+\\
+$N_1, N_2, \ldots, N_K$. Denimo, da lahko izberemo vzorec velikosti $n$.
 \\
 
 \noindent
 \textsc{\underline{Primer a}}
 \\
-Denimo, da so stroški raziskave enaki $C = C_0 + n C_1$, kjer je $n$ število enot v vzorcu ($C_0$ je začetni stršek, $C_1$ pa je nadaljnji strošek na enoto). Pri danih sredstvih za raziskavo v višini $C$ poiščemo velikosti podvzorcev $n_1, n_2, \ldots, n_K$, pri katerih je varianca standardne cenilke populacijskega povprečja minimalna.
+Denimo, da so stroški raziskave enaki $C = C_0 + n C_1$, kjer je $n$ število enot v vzorcu ($C_0$ je začetni strošek, $C_1$ pa je nadaljnji strošek na enoto). Pri danih sredstvih za raziskavo v višini $C$ poiščemo velikosti podvzorcev $n_1, n_2, \ldots, n_K$, pri katerih je varianca standardne cenilke populacijskega povprečja minimalna.
 \\
 Če imamo stratume velikosti $N_1, N_2, \ldots, N_K$, se moramo odločiti, kako velike vzorce bomo izbrali iz posameznih stratumov. Izbiramo tako, da bo varianca cenilke $\overline{X}$ čim manjša. 
 Poiščemo torej take $n_1, n_2, \ldots, n_K$, kjer $n = n_1 + n_2 + \ldots + n_K$, da bo $$ \text{var}(\overline{X}) = \sum_{k = 1}^{K} W_k ^ 2 \left( \frac{ \sigma_k^2}{n_k} \right) \left( \frac{N_k - n_k}{N_k - 1} \right) $$
@@ -269,14 +271,15 @@ $$ \text{E}(X) = \frac{1}{2} \ , \ \ \ \ \ \text{var}(X) = \frac{1}{4(2 \alpha +
 \textsc{\underline{Primer a}}
 \\
 Določimo obliko porazdelitve v odvisnosti od $\alpha$. 
-\begin{figure}[ht!]
-    \centering
-    \includegraphics[width=90mm]{grafi.png}
-    \caption{Grafi podane funkcije za različne $\alpha$.}
-\end{figure}
+\\
 Vidimo, da je funkcija $f(x \ | \ \alpha)$ simetrična glede na $x = \frac{1}{2}$ in ima v tej točki ekstrem ne glede na vrednost $\alpha$. Opazimo tudi, da je funkcija za $\alpha = 1$ kar vodoravna premica. Za $\alpha < 1$ je funkcija konveksna, za $\alpha > 1$ pa konkavna. 
 Z večanjem $\alpha$ postaja funkcija vse bolj strma in \textit{"ožja"}.
 \\
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=110mm]{grafi.png}
+    \caption{Grafi podane funkcije za različne $\alpha$.}
+\end{figure}
 
 \noindent
 \textsc{\underline{Primer b}}
@@ -287,6 +290,7 @@ Iz podane pričakovane vrednosti in variance lahko izračunamo vrednosti prvega 
 $$ \text{E}(X) = \frac{1}{n} \sum_{i = 1}^{n} X_i = \frac{1}{2}, $$
 $$ \text{E}(X^2) = \frac{1}{n} \sum_{i = 1}^{n} X_i^2 = \text{var}(X) + \text{E}(X)^2 = \frac{1}{4(2 \alpha + 1)} + \frac{1}{4}. $$
 
+\noindent
 Iz enačbe drugega momenta izrazimo $\alpha$.
 \begin{align*}
     \frac{1}{4(2 \alpha + 1)} + \frac{1}{4} &= \frac{1}{n} \sum_{i = 1}^{n} X_i^2 
@@ -314,8 +318,16 @@ $$ \Rightarrow l (\alpha \ | \ x) = n \cdot \text{ln}(\Gamma (2 \alpha)) - 2 n \
 Funkcijo $ l (\alpha \ | \ x) $ odvajamo po $\alpha$.
 $$ \frac{\partial l}{\partial \alpha} = n \cdot \frac{1}{\Gamma (2 \alpha)} \cdot 2 \Gamma' (2 \alpha) - 2n \cdot \frac{1}{\Gamma (\alpha)} \cdot \Gamma' (\alpha) + \sum_{i = 1}^{n} \text{ln}(x_i) + \sum_{i = 1}^{n} \text{ln}(x_i - 1)$$
 Cenilka bo obstaja natanko tedaj, ko bo imela enačba
- $$ \frac{1}{\Gamma (2 \alpha)} \cdot \Gamma' (2 \alpha) - \frac{1}{\Gamma (\alpha)} \cdot \Gamma' (\alpha) = \frac{1}{2n} \ \sum_{i = 1}^{n} \text{ln} \left( \frac{1}{x_i(x_i - 1)} \right) $$
+\begin{align}\label{en:res}
+    \frac{1}{\Gamma (2 \alpha)} \cdot \Gamma' (2 \alpha) - \frac{1}{\Gamma (\alpha)} \cdot \Gamma' (\alpha) = \frac{1}{2n} \ \sum_{i = 1}^{n} \text{ln} \left( \frac{1}{x_i(x_i - 1)} \right)
+\end{align}
 rešitev.
+\\
+\\
+Rešitev lahko izrazimo s \textit{funkcijo digama}, ki je definirana kot logaritemski odvod funkcije $\Gamma$. Naj velja  $F(x) = \frac{\Gamma ' (x)}{\Gamma (x)}$.
+\\
+Enačbo (\ref{en:res}) lahko torej zapišemo kot
+$$ F(2 \alpha) - F(\alpha) = \frac{1}{2n} \ \sum_{i = 1}^{n} \text{ln} \left( \frac{1}{x_i(x_i - 1)} \right). $$
 
 \noindent
 \textsc{\underline{Primer d}}
@@ -339,11 +351,13 @@ $$\text{var}(\hat{\alpha}) = \frac{1}{n} \cdot \frac{1}{ \frac{2 \ \Gamma '' (\a
 \newpage
 \noindent
 \textsc{\large{4. NALOGA}}
+\\
+\\
 V tabeli imamo podatke Ameriškega nacionalnega centra za statistiko zdravja o številu samomorov v ZDA v letu $1970$ po mesecih.
 
 \begin{figure}[ht!]
     \centering
-    \includegraphics[width=80mm]{samomori.png}
+    \includegraphics[width=60mm]{samomori.png}
     \caption{Podatki o samomorih}
 \end{figure}
 
@@ -351,7 +365,14 @@ V tabeli imamo podatke Ameriškega nacionalnega centra za statistiko zdravja o �
 \textsc{\underline{Primer a}}
 \\
 Narišemo histogram, pri katerem so širine stolpcev sorazmerne dolžinam mesecev. 
-\\
+Za višine stolpcev izberemo povprečno število na dan v posameznem mesecu, na primer januarja $\frac{1867}{31}$, februarja $\frac{1789}{28}$ in po enakem postopku za naslednje mesece.
+
+\begin{figure}[ht!]
+    \centering
+    \includegraphics[width=90mm]{hist.png}
+    \caption{Prikaz samomorov skozi leto.}
+\end{figure}
+
 \noindent
 \textsc{\underline{Primer b}}
 \\
@@ -368,7 +389,7 @@ Uporabili bomo Parsonovo $\chi^2$ statistiko:
 \end{align}
 kjer je $m = 12$, k število ocenjenih parametrov, kar je v napem primeru $0$. Imamo torej $11$ prostostnih stopenj. $O_i$ je opazovan rezultat, torej podatek, koliko samomorov se v mesecu zgodi.
 \\
-Iz spodnje tabele (slika iz \textit{John A. Rice: Mathematical Statistics and Data Analysis}) vidimo, da je točka, ki določa zgornjih $5\%$ $\chi^2$ testa z 11 prostostnimi stopnjami enaka $26.76$. To pomeni, da test ovržemo, če $\chi^2 > 26.76$. 
+Iz spodnje tabele (slika iz \textit{John A. Rice: Mathematical Statistics and Data Analysis}) vidimo, da test ovržemo, če $\chi^2 > 24.73$ za $\alpha = 0.01$ oz. če $\chi^2 > 19.68$ za $\alpha = 0.05$. 
 \begin{figure}[ht!]
     \centering
     \includegraphics[width=130mm]{hi.png}
@@ -396,7 +417,7 @@ Za lažji pregled zapišimo podatke za rabo izračuna (\ref{en:hi}) v tabelo:
 \noindent
 Vrednost $\chi^2$ statistike je vsota števil v zadnji vrstici tabele. Velja torej
 $$ \chi^2 = 4.11 + 14.37 + \ldots + 4.88 = 51.79 $$
-Iz zgornjih sklepov sledi, da $H_0$ zavržemo, saj je $51.79 > 26.76$. Zavrnili smo torej hipotezo, da je razmerje samomorov v posameznih mesecih konstantno.
+Iz zgornjih sklepov sledi, da $H_0$ zavržemo v vsakem primeru, saj je $51.79 > 26.76$, kar je najvišja vrednost v tej tabeli. Zavrnili smo torej hipotezo, da je razmerje samomorov v posameznih mesecih konstantno.
 \\
 \\
 Če še malo analiziramo podatke v tabeli, vidimo, da k testni statistiki največ prispevajo meseci februar, april in maj, saj imajo glede na druge mesece zelo visoko vrednost. Pri teh treh mesecih se pričakovano število samomorov in dejansko število samomorov za največ razlikujeta.
@@ -411,6 +432,10 @@ Iz zgornjih sklepov sledi, da $H_0$ zavržemo, saj je $51.79 > 26.76$. Zavrnili 
 Iz grafa ne vidimo nobenega vzorca, ki bi nam lahko kaj povedal o številu samomorov glede na posamezni mesec.
 \\
 \\
+\\
+\\
+\\
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \noindent
 \textsc{\large{5. NALOGA}}
@@ -481,5 +506,8 @@ $$ 1 - \frac{\text{var}(Y - \hat{Y})}{\text{var}(Y)} = \frac{\text{cov}(X,Y)^2}{
     &= \frac{\sigma_{x,y}^2}{\sigma_x^2 \sigma_y^2} = \frac{\text{cov}(X,Y)^2}{\text{var}(X) \text{var}(Y)} = r_{x,y}^2. 
 \end{align*}
 Pokazali smo, da je determinacijski koeficient res enak $1 - \frac{\text{var}(Y - \hat{Y})}{\text{var}(Y)}$.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \end{document}
